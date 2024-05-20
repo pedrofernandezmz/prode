@@ -6,7 +6,7 @@ import time
 def scrap_tablas():
     url = "https://www.promiedos.com.ar/primera"
     response = requests.get(url)
-    
+    # VER SI ME CONVIENE USAR TABLE SORTER Y NO INDICES
     keywords = ["posiciones", "posiciones", "promedios", "promedios2"]
     indices = [0, 1, 0, 0]
     names = ["posiciones", "posiciones_anual", "promedios", "promedios_prox"]
