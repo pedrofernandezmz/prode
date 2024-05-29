@@ -3,15 +3,12 @@ from bs4 import BeautifulSoup
 import re
 import csv
 
-def scrap_fechas():
+def scrap_formacion():
     # URL de la página a scrapear
-    url = "https://www.promiedos.com.ar/verfecha.php?fecha=3_14"
+    url = "https://www.promiedos.com.ar/verfecha.php?fecha=2_14"
 
     # Realizar la solicitud GET a la página
     response = requests.get(url)
-
-    # Obtener el arreglo de días desde la función scrap_days
-    days_array = scrap_days(response)
 
     # Verificar si la solicitud fue exitosa (código de estado 200)
     if response.status_code == 200:
