@@ -5,7 +5,7 @@ import csv
 
 def scrap_fechas():
     # URL de la página a scrapear
-    url = "https://www.promiedos.com.ar/verfecha.php?fecha=3_14"
+    url = "https://www.promiedos.com.ar/verfecha.php?fecha=4_14"
 
     # Realizar la solicitud GET a la página
     response = requests.get(url)
