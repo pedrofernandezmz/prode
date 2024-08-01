@@ -2,16 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-def scrap_formacion():
-    url = "https://www.promiedos.com.ar/ficha=xjpnxjsktrdy&c=14&v=3QWpQ764ToE"
-    response = requests.get(url)
+def scrap_incidencias(soup, n):
     
-    if response.status_code != 200:
-        return f"Error al realizar la solicitud GET. Status code: {response.status_code}"
-    
-    soup = BeautifulSoup(response.content, "html.parser")
-    
-    formacion_table = soup.find("table", {"id": "formacion1"})
+    formacion_table = soup.find("table", {"id": "formacion" + str(n)})
     
     if not formacion_table:
         return "No se encontró la tabla con id formacion1"
@@ -53,5 +46,11 @@ def scrap_formacion():
     return informacion
 
 if __name__ == "__main__":
-    informacion = scrap_formacion()
+    url = "https://www.promiedos.com.ar/ficha=xjpnxjsktrdy&c=14&v=3QWpQ764ToE"
+    response = requests.get(url)
+    
+    if response.status_code != 200:
+        print(f"Error al realizar la solicitud GET. Status code: {response.status_code}")
+    soup = BeautifulSoup(response.content, "html.parser")
+    informacion = scrap_incidencias(soup, 2)
     print(json.dumps(informacion, ensure_ascii=False, indent=4))

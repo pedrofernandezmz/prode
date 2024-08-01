@@ -1,29 +1,38 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+from scrap_info import scrap_info, scrap_estadisticas
+from scrap_incidencias import scrap_incidencias
 import time
 
-def scrap_formacion():
-    url = "https://www.promiedos.com.ar/ficha=xjpnxjsktrdz&c=14&v=xrWW5cxlARI"
+def scrap_partido(url):
     response = requests.get(url)
 
-    data = {
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, "html.parser")
+        info = json.loads(scrap_info(soup))
+        estadisticas = json.loads(scrap_estadisticas(soup))
+        incidencias1 = scrap_incidencias(soup, 1)
+        incidencias2 = scrap_incidencias(soup, 2)
+
+        data = {
+        **info,
         "formacion1": {
             "equipo": "",
             "titulares": [],
             "dt": {},
-            "suplentes": []
+            "suplentes": [],
+            **incidencias1
         },
         "formacion2": {
             "equipo": "",
             "titulares": [],
             "dt": {},
-            "suplentes": []
-        }
+            "suplentes": [],
+            **incidencias2
+        },
+        **estadisticas
     }
-
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.content, "html.parser")
 
         for formacion in data.keys():
             tabla = soup.find("table", {"id": formacion})
@@ -65,7 +74,7 @@ def scrap_formacion():
                 data[formacion]['dt']['Edad'] = dt_row.find_all('td')[2].get_text(strip=True)
                 data[formacion]['dt']['Imagen'] = dt_row.find('img')['src'] if dt_row.find('img') else None
 
-        # Guardar los datos en un archivo JSON
+        # Guardar los datos en un archivo JSON ACA TENGO QUE PONER LINK
         with open("formaciones.json", "w", encoding="utf-8") as jsonfile:
             json.dump(data, jsonfile, ensure_ascii=False, indent=4)
         print("Los datos se han guardado correctamente en el archivo formaciones.json.")
@@ -74,7 +83,8 @@ def scrap_formacion():
 
 if __name__ == "__main__":
     start_time = time.time()
-    scrap_formacion()
+    url = "https://www.promiedos.com.ar/ficha=xjpnxjsktrdz&c=14&v=xrWW5cxlARI"
+    scrap_partido(url)
     end_time = time.time()
     total_time = end_time - start_time
     print("Tiempo total de ejecución:", total_time, "segundos")

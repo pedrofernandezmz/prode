@@ -2,12 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-def scrap_estadisticas():
-    url = "https://www.promiedos.com.ar/ficha=xjpnxjsktrdz&c=14&v=xrWW5cxlARI"
-    response = requests.get(url)
-    
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.content, "html.parser")
+def scrap_estadisticas(soup):
+
         estadisticas_div = soup.find("div", {"id": "ficha-estadisticas"})
         
         if estadisticas_div:
@@ -38,15 +34,11 @@ def scrap_estadisticas():
             }
             
             return json.dumps(estadisticas, ensure_ascii=False, indent=4)
-    else:
-        return json.dumps({"error": f"Error al realizar la solicitud GET. Status code: {response.status_code}"}, indent=4)
+        else:
+            return json.dumps({"error": f"Error al realizar la solicitud GET. Status code: {response.status_code}"}, indent=4)
     
-def scrap_info():
-    url = "https://www.promiedos.com.ar/ficha=xjpnxjsktxjy&c=14&v=ryUHaXBmQ-c"
-    response = requests.get(url)
-    
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.content, "html.parser")
+def scrap_info(soup):
+        
         resultados_div = soup.find("div", {"id": "ficha-resultados"})
         
         if resultados_div:
@@ -60,13 +52,15 @@ def scrap_info():
                 elementos_refe = horario_div.find_all("span", class_="refe")
                 br_elements = horario_div.find_all("br")
                 nomequipo_elements = soup.find_all("td", class_="nomequipo")
+                iframe = soup.find("iframe")
                 
                 nombreequipo = [element.get_text(strip=True) for element in nomequipo_elements]
                 fecha = br_elements[0].next_sibling.strip() if br_elements[0].next_sibling else ""
                 todo = elementos_refe[0].get_text(strip=True) if len(elementos_refe) > 0 else ""
                 arbitro = elementos_refe[1].get_text(strip=True) if len(elementos_refe) > 1 else ""
                 tv = elementos_refe[2].get_text(strip=True) if len(elementos_refe) > 2 else ""
-                # resumen = 
+                src = "https:" + iframe.get("src", "")
+                # ACA PUEDE DAR ERROR SI NO ENCUENTRA LINK
 
                 estadio = todo.replace(arbitro, "").replace(tv, "")
 
@@ -82,14 +76,20 @@ def scrap_info():
                     "Estadio": estadio,
                     "Arbitro": arbitro,
                     "TV": tv,
-                    "Resumen":
+                    "Resumen": src
                 }
                 
                 return json.dumps(informacion, ensure_ascii=False, indent=4)
-    else:
-        return json.dumps({"error": f"Error al realizar la solicitud GET. Status code: {response.status_code}"}, indent=4)
+        else:
+            return json.dumps({"error": f"Error al realizar la solicitud GET. Status code: {response.status_code}"}, indent=4)
 
 if __name__ == "__main__":
-    result = scrap_estadisticas()
-    # result = scrap_info()
+    url = "https://www.promiedos.com.ar/ficha=xjpnxjsktrdz&c=14&v=xrWW5cxlARI"
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, "html.parser")
+    else:
+        print({"error": f"Error al realizar la solicitud GET. Status code: {response.status_code}"}, indent=4)
+    # result = scrap_estadisticas(soup)
+    result = scrap_info(soup)
     print(result)

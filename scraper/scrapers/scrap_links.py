@@ -4,7 +4,7 @@ import time
 # PROBAR QUE PASA SI TENGO UN GAME-INFO NULL!
 def scrap_links():
     # URL de la página a scrapear
-    url = "https://www.promiedos.com.ar/verfecha.php?fecha=3_14"
+    url = "https://www.promiedos.com.ar/verfecha.php?fecha=8_14"
 
     # Realizar la solicitud GET a la página
     response = requests.get(url)
