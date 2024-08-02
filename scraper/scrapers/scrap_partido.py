@@ -1,11 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-from scrap_info import scrap_info, scrap_estadisticas
-from scrap_incidencias import scrap_incidencias
+from .scrap_info import scrap_info, scrap_estadisticas
+from .scrap_incidencias import scrap_incidencias
 import time
 
-def scrap_partido(url):
+def scrap_partido(link):
+    url = "https://www.promiedos.com.ar/" + link
     response = requests.get(url)
 
     if response.status_code == 200:
@@ -75,16 +76,16 @@ def scrap_partido(url):
                 data[formacion]['dt']['Imagen'] = dt_row.find('img')['src'] if dt_row.find('img') else None
 
         # Guardar los datos en un archivo JSON ACA TENGO QUE PONER LINK
-        with open("formaciones.json", "w", encoding="utf-8") as jsonfile:
+        with open(f"Scraper/jsons/{link}.json", "w", encoding="utf-8") as jsonfile:
             json.dump(data, jsonfile, ensure_ascii=False, indent=4)
-        print("Los datos se han guardado correctamente en el archivo formaciones.json.")
+        print(f"Los datos se han guardado correctamente en el archivo {link}.json.")
     else:
         print("Error al realizar la solicitud GET.")
 
 if __name__ == "__main__":
     start_time = time.time()
-    url = "https://www.promiedos.com.ar/ficha=xjpnxjsktrdz&c=14&v=xrWW5cxlARI"
-    scrap_partido(url)
+    link = "ficha=xjpnxjsxjzrd&c=14&v=sOIpEil5tKE"
+    scrap_partido(link)
     end_time = time.time()
     total_time = end_time - start_time
     print("Tiempo total de ejecución:", total_time, "segundos")

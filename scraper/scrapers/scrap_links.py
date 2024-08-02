@@ -2,9 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import time
 # PROBAR QUE PASA SI TENGO UN GAME-INFO NULL!
-def scrap_links():
+def scrap_links(n):
     # URL de la página a scrapear
-    url = "https://www.promiedos.com.ar/verfecha.php?fecha=8_14"
+    url = f"https://www.promiedos.com.ar/verfecha.php?fecha={n}_14"
 
     # Realizar la solicitud GET a la página
     response = requests.get(url)
@@ -23,7 +23,7 @@ def scrap_links():
 
 if __name__ == "__main__":
     start_time = time.time()
-    result_links = scrap_links()
+    result_links = scrap_links(8)
     print("Links encontrados:", result_links)
     end_time = time.time()
     total_time = end_time - start_time

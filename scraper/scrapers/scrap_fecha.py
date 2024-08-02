@@ -4,9 +4,9 @@ import re
 import json
 import time
 
-def scrap_fechas():
+def scrap_fechas(n):
     # URL de la página a scrapear
-    url = "https://www.promiedos.com.ar/verfecha.php?fecha=4_14"
+    url = f"https://www.promiedos.com.ar/verfecha.php?fecha={n}_14"
 
     # Realizar la solicitud GET a la página
     response = requests.get(url)
@@ -74,10 +74,10 @@ def scrap_fechas():
             data_list.append(row_dict)
         
         # Guardar los datos en un archivo JSON
-        with open("Scraper/jsons/partido.json", "w", encoding="utf-8") as jsonfile:
+        with open(f"Scraper/jsons/fecha_{n}.json", "w", encoding="utf-8") as jsonfile:
             json.dump(data_list, jsonfile, ensure_ascii=False, indent=4)
         
-        print("Los datos se han guardado correctamente en el archivo partido.json.")
+        print(f"Los datos se han guardado correctamente en el archivo fecha_{n}.json.")
         
     else:
         print("Error al acceder a la página:", response.status_code)
@@ -132,7 +132,9 @@ def scrap_links(soup):
 
 if __name__ == "__main__":
     start_time = time.time()
-    scrap_fechas()
+    n = 9
+    # for n in range(1, 28):
+    scrap_fechas(n)
     end_time = time.time()
     total_time = end_time - start_time
     print("Tiempo total de ejecución:", total_time, "segundos")

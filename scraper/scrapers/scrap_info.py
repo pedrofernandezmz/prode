@@ -55,11 +55,19 @@ def scrap_info(soup):
                 iframe = soup.find("iframe")
                 
                 nombreequipo = [element.get_text(strip=True) for element in nomequipo_elements]
-                fecha = br_elements[0].next_sibling.strip() if br_elements[0].next_sibling else ""
+                # SOLUCION CUANDO NO HAY FECHA
+                fecha = ""
+                if br_elements and br_elements[0]:
+                    next_sibling = br_elements[0].next_sibling
+                    if isinstance(next_sibling, str):
+                        fecha = next_sibling.strip()
+                
                 todo = elementos_refe[0].get_text(strip=True) if len(elementos_refe) > 0 else ""
                 arbitro = elementos_refe[1].get_text(strip=True) if len(elementos_refe) > 1 else ""
                 tv = elementos_refe[2].get_text(strip=True) if len(elementos_refe) > 2 else ""
-                src = "https:" + iframe.get("src", "")
+                src = ""
+                if iframe is not None:
+                    src = "https:" + iframe.get("src", "")
                 # ACA PUEDE DAR ERROR SI NO ENCUENTRA LINK
 
                 estadio = todo.replace(arbitro, "").replace(tv, "")
@@ -85,6 +93,8 @@ def scrap_info(soup):
 
 if __name__ == "__main__":
     url = "https://www.promiedos.com.ar/ficha=xjpnxjsktrdz&c=14&v=xrWW5cxlARI"
+    # url = "https://www.promiedos.com.ar/ficha=xjpnxjsxjgcv&c=14" ACA NO HAY VIDEO
+    # url = "https://www.promiedos.com.ar/ficha=xjpnxjsxjzrd&c=14&v=sOIpEil5tKE" ACA NO HAY FECHA
     response = requests.get(url)
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, "html.parser")
