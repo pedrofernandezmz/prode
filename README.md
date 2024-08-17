@@ -1,6 +1,8 @@
 # Proyecto Integrador
 
-![Aspose Words 72db0787-0ee0-4415-8cad-0c50d0619c18 001](https://github.com/user-attachments/assets/152e5d8e-1795-4787-900a-d672aa74ad70)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/152e5d8e-1795-4787-900a-d672aa74ad70" alt="Aspose Words 72db0787-0ee0-4415-8cad-0c50d0619c18 001">
+</p>
 
 Pedro Fernández Márquez 2009636
 
