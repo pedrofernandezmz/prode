@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import time
-from teams_mapping import teams_mapping
 
 def scrap_tablas():
     url = "https://www.promiedos.com.ar/primera"
@@ -25,19 +24,6 @@ def scrap_tablas():
             for fila in filas[1:]:
                 celdas = fila.find_all("td")
                 row = {headers[i]: celda.get_text(strip=True) for i, celda in enumerate(celdas)}
-                
-                # Buscar imágenes en la fila
-                imagen = fila.find("img")
-                if imagen and imagen.get("src"):
-                    imagen_src = imagen.get("src")
-                    numero_equipo = int(imagen_src.split("/")[-1].split(".")[0])
-                    # Reemplazar el número por el nombre del equipo según el mapeo
-                    equipo_nombre = teams_mapping.get(numero_equipo)
-                    if equipo_nombre:
-                        row["Imagen"] = equipo_nombre
-                    else:
-                        row["Imagen"] = imagen_src  # Dejar el src original si no hay mapeo
-                
                 data.append(row)
             
             with open(f"Scraper/jsons/{name}.json", "w", encoding="utf-8") as jsonfile:
@@ -64,19 +50,6 @@ def scrap_est(response):
         for fila in filas[1:]:
             celdas = fila.find_all("td")
             row = {headers[i]: celda.get_text(strip=True) for i, celda in enumerate(celdas)}
-            
-            # Buscar imágenes en la fila
-            imagen = fila.find("img")
-            if imagen and imagen.get("src"):
-                imagen_src = imagen.get("src")
-                numero_equipo = int(imagen_src.split("/")[-1].split(".")[0])
-                # Reemplazar el número por el nombre del equipo según el mapeo
-                equipo_nombre = teams_mapping.get(numero_equipo)
-                if equipo_nombre:
-                    row["Imagen"] = equipo_nombre
-                else:
-                    row["Imagen"] = imagen_src  # Dejar el src original si no hay mapeo
-            
             # Ajustes específicos para la tabla de goleadores y asistencias
             if 'Jugador' in row:
                 row['Jugador'] = ''.join([char for char in row['Jugador'] if not char.isdigit()]).replace("(  )", "").strip()
