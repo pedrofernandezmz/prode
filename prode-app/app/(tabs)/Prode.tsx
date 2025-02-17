@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, ScrollView, View, Text, Button, Alert, TouchableOpacity } from 'react-native';
-import partidosData from '@/assets/jsons-test/fecha_12.json';
+import partidosData from '@/assets/jsons-test/fecha_23.json';
+import svgMap from '@/assets/svgMap';
 
 // Define el tipo de `predictions` como un objeto donde las claves son números y los valores son cadenas
 type PredictionsType = {
@@ -8,14 +9,18 @@ type PredictionsType = {
 };
 
 export default function Prode() {
-  // Utiliza el tipo `PredictionsType` para el estado `predictions`
+  // Estados para los pronósticos y si son editables
   const [predictions, setPredictions] = useState<PredictionsType>({});
+  const [isEditable, setIsEditable] = useState(true);
 
   const handlePrediction = (matchId: number, prediction: 'local' | 'empate' | 'visitante') => {
-    setPredictions(prev => ({
-      ...prev,
-      [matchId]: prediction,
-    }));
+    // Solo permite modificar si `isEditable` es true
+    if (isEditable) {
+      setPredictions(prev => ({
+        ...prev,
+        [matchId]: prediction,
+      }));
+    }
   };
 
   const handleSave = () => {
@@ -25,53 +30,78 @@ export default function Prode() {
       Alert.alert('Error', 'Completa el pronóstico de todos los partidos.');
     } else {
       Alert.alert('Éxito', 'Los pronósticos se han guardado correctamente.');
+      setIsEditable(false);
     }
+  };
+
+  const handleEdit = () => {
+    setIsEditable(true);
   };
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>PRODE</Text>
       <ScrollView style={styles.scrollView}>
-        {partidosData.map((item, index) => (
-          <View key={index} style={styles.matchContainer}>
-            <Text style={styles.dateText}>{item["Dia"]} - {item["Tiempo"]}</Text>
-            <View style={styles.teamsContainer}>
-              <Text style={styles.teamText}>{item["Equipo1"]}</Text>
-              <Text style={styles.vsText}>vs</Text>
-              <Text style={styles.teamText}>{item["Equipo2"]}</Text>
+        {partidosData.map((item, index) => {
+          const TeamLogo1 = svgMap[item["Imagen1"] as keyof typeof svgMap];
+          const TeamLogo2 = svgMap[item["Imagen2"] as keyof typeof svgMap];
+
+          return (
+            <View key={index} style={styles.matchContainer}>
+              <View style={styles.teamsContainer}>
+                <View style={styles.team1}>
+                  {TeamLogo1 && <TeamLogo1 width={40} height={40} />}
+                  <Text>{item["Equipo1"]}</Text>
+                </View>
+                <Text style={styles.vsText}>vs</Text>
+                <View style={styles.team2}>
+                  {TeamLogo2 && <TeamLogo2 width={40} height={40} />}
+                  <Text>{item["Equipo2"]}</Text>
+                </View>
+              </View>
+              <View style={styles.buttonsContainer}>
+                <TouchableOpacity
+                  style={[
+                    styles.button,
+                    predictions[index] === 'local' && styles.buttonSelected,
+                    !isEditable && styles.buttonDisabled,
+                  ]}
+                  onPress={() => handlePrediction(index, 'local')}
+                  disabled={!isEditable}
+                >
+                  <Text>Local</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={[
+                    styles.button,
+                    predictions[index] === 'empate' && styles.buttonSelected,
+                    !isEditable && styles.buttonDisabled,
+                  ]}
+                  onPress={() => handlePrediction(index, 'empate')}
+                  disabled={!isEditable}
+                >
+                  <Text>Empate</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={[
+                    styles.button,
+                    predictions[index] === 'visitante' && styles.buttonSelected,
+                    !isEditable && styles.buttonDisabled,
+                  ]}
+                  onPress={() => handlePrediction(index, 'visitante')}
+                  disabled={!isEditable}
+                >
+                  <Text>Visitante</Text>
+                </TouchableOpacity>
+              </View>
             </View>
-            <View style={styles.buttonsContainer}>
-              <TouchableOpacity
-                style={[
-                  styles.button,
-                  predictions[index] === 'local' && styles.buttonSelected,
-                ]}
-                onPress={() => handlePrediction(index, 'local')}
-              >
-                <Text>Local</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={[
-                  styles.button,
-                  predictions[index] === 'empate' && styles.buttonSelected,
-                ]}
-                onPress={() => handlePrediction(index, 'empate')}
-              >
-                <Text>Empate</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={[
-                  styles.button,
-                  predictions[index] === 'visitante' && styles.buttonSelected,
-                ]}
-                onPress={() => handlePrediction(index, 'visitante')}
-              >
-                <Text>Visitante</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
-        ))}
-        <Button title="Guardar" onPress={handleSave} color="#007BFF" />
+          );
+        })}
+        {isEditable ? (
+          <Button title="Guardar" onPress={handleSave} color="#007BFF" />
+        ) : (
+          <Button title="Modificar" onPress={handleEdit} color="#FF5733" />
+        )}
       </ScrollView>
     </View>
   );
@@ -134,5 +164,16 @@ const styles = StyleSheet.create({
   },
   buttonSelected: {
     backgroundColor: '#007BFF',
+  },
+  team1: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  team2: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  buttonDisabled: {
+    opacity: 0.5,
   },
 });

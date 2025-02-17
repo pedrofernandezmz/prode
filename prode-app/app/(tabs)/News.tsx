@@ -1,13 +1,13 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { StyleSheet, ScrollView, View, Text, Image, TouchableOpacity, Modal } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Video, ResizeMode } from 'expo-av';
 import { WebView } from 'react-native-webview'; // Importar WebView
-import newsData from '@/assets/jsons-test/news.json'; // Importar datos de noticias
 import svgMap from '@/assets/svgMap'; // Importar mapa de SVGs
 
 export default function News() {
   const [selectedNewsUrl, setSelectedNewsUrl] = useState<string | null>(null);
+  const [newsData, setNewsData] = useState<any[]>([]); // Estado para almacenar los datos de las noticias
 
   // Referencia a la instancia de WebView
   const webViewRef = useRef<WebView>(null);
@@ -22,6 +22,22 @@ export default function News() {
     true;
   })();
 `;
+
+  // Función para cargar las noticias desde la URL
+  const fetchNewsData = async (url: string) => {
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+      setNewsData(data); // Actualiza el estado con las nuevas noticias
+    } catch (error) {
+      console.error('Error fetching news data:', error);
+    }
+  };
+
+  // Función para manejar el click en los iconos del scroll horizontal
+  const handleIconPress = (key: string) => {
+    fetchNewsData(`http://172.20.10.6:3000/get_json/news_${key}.json`); // Llamar a fetch con el key del icono
+  };
 
   const handlePress = (url: string) => {
     setSelectedNewsUrl(url);
@@ -39,6 +55,11 @@ export default function News() {
     }
   };
 
+  // Cargar las noticias por defecto al iniciar el componente
+  useEffect(() => {
+    fetchNewsData('http://172.20.10.6:3000/get_json/news.json'); // URL por defecto
+  }, []);
+
   return (
     <View style={styles.container}>
       <View style={styles.gradientContainer}>
@@ -54,9 +75,11 @@ export default function News() {
           {Object.keys(svgMap).map((key) => {
             const IconComponent = svgMap[key];
             return (
-              <View key={key} style={styles.frameWrapperShadowBox}>
-                <IconComponent width={40} height={40} />
-              </View>
+              <TouchableOpacity key={key} onPress={() => handleIconPress(key)}>
+                <View style={styles.frameWrapperShadowBox}>
+                  <IconComponent width={40} height={40} />
+                </View>
+              </TouchableOpacity>
             );
           })}
         </View>
