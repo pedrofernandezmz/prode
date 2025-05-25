@@ -26,7 +26,7 @@ export default function Tables() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://172.20.10.6:3000/get_json/posiciones.json');
+        const response = await fetch('http://127.0.0.1:3000/get_json/posiciones.json');
         if (!response.ok) {
           throw new Error('Error al obtener los datos');
         }

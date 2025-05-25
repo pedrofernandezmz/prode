@@ -1,0 +1,728 @@
+{
+    "TTL": 600,
+    "cache_time": 3600,
+    "game": {
+        "id": "edbjhae",
+        "league": {
+            "name": "Liga Profesional Argentina",
+            "id": "hc",
+            "url_name": "liga-profesional",
+            "country_id": "ba",
+            "show_country_flags": false,
+            "allow_open": true,
+            "country_name": "Argentina",
+            "is_international": false
+        },
+        "stage_round_name": "Apertura, Fecha 14",
+        "winner": -1,
+        "teams": [
+            {
+                "name": "Tigre",
+                "short_name": "Tigre",
+                "url_name": "tigre",
+                "id": "iid",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#161267",
+                    "text_color": "#FFFFFF"
+                },
+                "red_cards": 0
+            },
+            {
+                "name": "Belgrano",
+                "short_name": "Belgrano",
+                "url_name": "belgrano",
+                "id": "fhid",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#2AACE2",
+                    "text_color": "#000000"
+                },
+                "red_cards": 0
+            }
+        ],
+        "url_name": "tigre-vs-belgrano",
+        "status": {
+            "enum": 1,
+            "name": "Prog.",
+            "short_name": "Prog.",
+            "symbol_name": "Prog."
+        },
+        "start_time": "21-04-2025 19:00",
+        "game_time": -1.0,
+        "game_time_to_display": "",
+        "game_time_status_to_display": "Prog.",
+        "players": {
+            "missing_players": [
+                [
+                    {
+                        "jersey_num": 8,
+                        "name": "Martín Garay",
+                        "player_short_name": "Garay",
+                        "position": "Defensor",
+                        "formation_position": "Defensa Lateral Derecho",
+                        "country_id": "ba",
+                        "age": 25,
+                        "height": "1.67",
+                        "missing_details": {
+                            "type": 1,
+                            "reason": "Lesionado",
+                            "will_play_status": 2,
+                            "will_play": "No jugarán"
+                        }
+                    },
+                    {
+                        "jersey_num": 34,
+                        "name": "David Romero",
+                        "player_short_name": "Romero",
+                        "position": "Delantero",
+                        "formation_position": "Centro Delantero",
+                        "country_id": "ba",
+                        "age": 22,
+                        "height": "1.79",
+                        "missing_details": {
+                            "type": 1,
+                            "reason": "Lesionado",
+                            "will_play_status": 2,
+                            "will_play": "No jugarán"
+                        }
+                    },
+                    {
+                        "jersey_num": 19,
+                        "name": "Alfio Oviedo",
+                        "player_short_name": "Oviedo",
+                        "position": "Delantero",
+                        "formation_position": "Centro Delantero",
+                        "country_id": "bai",
+                        "age": 29,
+                        "height": "1.80",
+                        "missing_details": {
+                            "type": 1,
+                            "reason": "Lesionado",
+                            "will_play_status": 2,
+                            "will_play": "No jugarán"
+                        }
+                    },
+                    {
+                        "jersey_num": 9,
+                        "name": "Ijiel Protti",
+                        "player_short_name": "Protti",
+                        "position": "Delantero",
+                        "formation_position": "Centro Delantero",
+                        "country_id": "ba",
+                        "age": 30,
+                        "height": "1.75",
+                        "missing_details": {
+                            "type": 1,
+                            "reason": "Lesionado",
+                            "will_play_status": 2,
+                            "will_play": "No jugarán"
+                        }
+                    }
+                ],
+                [
+                    {
+                        "jersey_num": 33,
+                        "name": "Tobías Ostchega",
+                        "player_short_name": "Ostchega",
+                        "position": "Defensor",
+                        "formation_position": "Defensa Lateral Izquierdo",
+                        "country_id": "ba",
+                        "age": 26,
+                        "height": "1.76",
+                        "missing_details": {
+                            "type": 1,
+                            "reason": "Lesionado",
+                            "will_play_status": 2,
+                            "will_play": "No jugarán"
+                        }
+                    },
+                    {
+                        "jersey_num": 4,
+                        "name": "Elias López",
+                        "player_short_name": "Elias López",
+                        "position": "Defensor",
+                        "formation_position": "Defensa Lateral Derecho",
+                        "country_id": "ba",
+                        "age": 24,
+                        "height": "1.69",
+                        "missing_details": {
+                            "type": 1,
+                            "reason": "Lesionado",
+                            "will_play_status": 2,
+                            "will_play": "No jugarán"
+                        }
+                    },
+                    {
+                        "jersey_num": 53,
+                        "name": "Juan Velazquez",
+                        "player_short_name": "Velazquez",
+                        "position": "Delantero",
+                        "formation_position": "Centro Delantero",
+                        "country_id": "ba",
+                        "age": 20,
+                        "missing_details": {
+                            "type": 1,
+                            "reason": "Lesionado",
+                            "will_play_status": 2,
+                            "will_play": "No jugarán"
+                        }
+                    },
+                    {
+                        "jersey_num": 42,
+                        "name": "Jeremías Lucco",
+                        "player_short_name": "Lucco",
+                        "position": "Mediocampista",
+                        "formation_position": "Mediocampista Central",
+                        "country_id": "ba",
+                        "age": 19,
+                        "height": "1.69",
+                        "missing_details": {
+                            "type": 1,
+                            "reason": "Lesionado",
+                            "will_play_status": 2,
+                            "will_play": "No jugarán"
+                        }
+                    }
+                ]
+            ]
+        },
+        "prediction": {
+            "options": [
+                {
+                    "name": "1",
+                    "votes": 37,
+                    "percentage": 43,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjhae&vote=1"
+                },
+                {
+                    "name": "X",
+                    "votes": 8,
+                    "percentage": 9,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjhae&vote=x"
+                },
+                {
+                    "name": "2",
+                    "votes": 42,
+                    "percentage": 48,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjhae&vote=2"
+                }
+            ],
+            "total_votes": 81,
+            "odds": [
+                {
+                    "name": "1",
+                    "value": 2.1,
+                    "trend": 1
+                },
+                {
+                    "name": "X",
+                    "value": 3.4,
+                    "trend": 2
+                },
+                {
+                    "name": "2",
+                    "value": 3.5,
+                    "trend": 1
+                }
+            ]
+        },
+        "game_info": [
+            {
+                "name": "Estadio",
+                "value": "Estadio Jose Dellagiovanna"
+            },
+            {
+                "name": "Capacidad",
+                "value": "26282"
+            },
+            {
+                "name": "Árbitro",
+                "value": "A. Penel"
+            },
+            {
+                "name": "Arg TV",
+                "value": "ESPN Premium"
+            }
+        ],
+        "head_to_head": {
+            "home_wins": 2,
+            "away_wins": 1,
+            "draws": 2,
+            "games": [
+                {
+                    "id": "ebccfcb",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Tigre",
+                            "short_name": "Tigre",
+                            "url_name": "tigre",
+                            "id": "iid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#161267",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Belgrano",
+                            "short_name": "Belgrano",
+                            "url_name": "belgrano",
+                            "id": "fhid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#2AACE2",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "tigre-vs-belgrano",
+                    "scores": [
+                        1.0,
+                        1.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "13-06-2024 19:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.5,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 2.88,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 3.2,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "eaddicj",
+                    "league": {
+                        "name": "Copa de la Liga Profesional",
+                        "id": "hcbe",
+                        "url_name": "copa-de-la-liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 2,
+                    "teams": [
+                        {
+                            "name": "Tigre",
+                            "short_name": "Tigre",
+                            "url_name": "tigre",
+                            "id": "iid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#161267",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Belgrano",
+                            "short_name": "Belgrano",
+                            "url_name": "belgrano",
+                            "id": "fhid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#2AACE2",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "tigre-vs-belgrano",
+                    "scores": [
+                        1.0,
+                        4.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "29-03-2024 18:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.7,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.2,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 2.75,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dihhehc",
+                    "league": {
+                        "name": "Copa de la Liga Profesional",
+                        "id": "hcbe",
+                        "url_name": "copa-de-la-liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 2,
+                    "teams": [
+                        {
+                            "name": "Belgrano",
+                            "short_name": "Belgrano",
+                            "url_name": "belgrano",
+                            "id": "fhid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#2AACE2",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Tigre",
+                            "short_name": "Tigre",
+                            "url_name": "tigre",
+                            "id": "iid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#161267",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "belgrano-vs-tigre",
+                    "scores": [
+                        0.0,
+                        3.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "06-11-2023 21:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.45,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 2.88,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 3.4,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dghhjjf",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 2,
+                    "teams": [
+                        {
+                            "name": "Belgrano",
+                            "short_name": "Belgrano",
+                            "url_name": "belgrano",
+                            "id": "fhid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#2AACE2",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Tigre",
+                            "short_name": "Tigre",
+                            "url_name": "tigre",
+                            "id": "iid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#161267",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "belgrano-vs-tigre",
+                    "scores": [
+                        0.0,
+                        2.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "24-02-2023 21:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.88,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.0,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 2.6,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "chibbia",
+                    "league": {
+                        "name": "Primera Nacional",
+                        "id": "ebj",
+                        "url_name": "primera-nacional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Tigre",
+                            "short_name": "Tigre",
+                            "url_name": "tigre",
+                            "id": "iid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#161267",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Belgrano",
+                            "short_name": "Belgrano",
+                            "url_name": "belgrano",
+                            "id": "fhid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#2AACE2",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "tigre-vs-belgrano",
+                    "scores": [
+                        0.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "25-07-2021 15:10",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.0,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.1,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 4.0,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "recent_form": {
+            "home": [
+                0,
+                0,
+                1,
+                1,
+                0
+            ],
+            "away": [
+                1,
+                0,
+                1,
+                2,
+                2
+            ]
+        },
+        "standings": {
+            "title": "Posiciones",
+            "columns": [
+                {
+                    "key": "points",
+                    "display_name": "PTS",
+                    "is_bold": true
+                },
+                {
+                    "key": "games_played",
+                    "display_name": "J"
+                },
+                {
+                    "key": "ratio",
+                    "display_name": "+/-"
+                }
+            ],
+            "rows": [
+                {
+                    "num": 4,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Tigre",
+                            "short_name": "Tigre",
+                            "url_name": "tigre",
+                            "id": "iid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#161267",
+                                "text_color": "#FFFFFF"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "24"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "13"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "6"
+                        }
+                    ]
+                },
+                {
+                    "num": 12,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Belgrano",
+                            "short_name": "Belgrano",
+                            "url_name": "belgrano",
+                            "id": "fhid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#2AACE2",
+                                "text_color": "#000000"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "14"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "13"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "-10"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

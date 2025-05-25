@@ -3,22 +3,23 @@ from flask_cors import CORS
 import os
 
 app = Flask(__name__)
-CORS(app)  # Habilitar CORS para todas las rutas
+CORS(app)  # Enable CORS for all routes
 
-# Ruta a la carpeta "jsons" que está en el mismo directorio que app.py
+# Path to the "jsons" folder located in the same directory as app.py
 JSON_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'jsons')
 
 @app.route('/get_json/<filename>', methods=['GET'])
 def get_json(filename):
-    # Construir la ruta completa del archivo
+    # Build the full path of the file
     file_path = os.path.join(JSON_FOLDER, filename)
     
-    # Comprobar si el archivo existe y tiene extensión .json
+    # Check if the file exists and has a .json extension
     if os.path.exists(file_path) and filename.endswith('.json'):
         return send_file(file_path, mimetype='application/json')
     else:
-        # Devolver un error 404 si el archivo no se encuentra o no es un archivo JSON
+        # Return a 404 error if the file is not found or is not a JSON file
         abort(404, description="Resource not found")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=3000, debug=True)
+

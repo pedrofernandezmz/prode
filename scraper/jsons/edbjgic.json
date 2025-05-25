@@ -1,0 +1,549 @@
+{
+    "TTL": 600,
+    "cache_time": 10800,
+    "game": {
+        "id": "edbjgic",
+        "league": {
+            "name": "Liga Profesional Argentina",
+            "id": "hc",
+            "url_name": "liga-profesional",
+            "country_id": "ba",
+            "show_country_flags": false,
+            "allow_open": true,
+            "country_name": "Argentina",
+            "is_international": false
+        },
+        "stage_round_name": "Apertura, Fecha 16",
+        "winner": -1,
+        "teams": [
+            {
+                "name": "Banfield",
+                "short_name": "Banfield",
+                "url_name": "banfield",
+                "id": "ihi",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#02953D",
+                    "text_color": "#000000"
+                },
+                "red_cards": 0
+            },
+            {
+                "name": "Central Córdoba SdE",
+                "short_name": "Central Córdoba",
+                "url_name": "central-cordoba-sde",
+                "id": "beafh",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#9E9E9E",
+                    "text_color": "#000000"
+                },
+                "red_cards": 0
+            }
+        ],
+        "url_name": "banfield-vs-central-cordoba-sde",
+        "status": {
+            "enum": 1,
+            "name": "Prog.",
+            "short_name": "Prog.",
+            "symbol_name": "Prog."
+        },
+        "start_time": "04-05-2025 11:00",
+        "game_time": -1.0,
+        "game_time_to_display": "",
+        "game_time_status_to_display": "Prog.",
+        "prediction": {
+            "options": [
+                {
+                    "name": "1",
+                    "votes": 7,
+                    "percentage": 59,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjgic&vote=1"
+                },
+                {
+                    "name": "X",
+                    "votes": 1,
+                    "percentage": 8,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjgic&vote=x"
+                },
+                {
+                    "name": "2",
+                    "votes": 4,
+                    "percentage": 33,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjgic&vote=2"
+                }
+            ],
+            "total_votes": 9
+        },
+        "game_info": [
+            {
+                "name": "Estadio",
+                "value": "Estadio Florencio Sola"
+            },
+            {
+                "name": "Capacidad",
+                "value": "34901"
+            }
+        ],
+        "head_to_head": {
+            "home_wins": 2,
+            "away_wins": 0,
+            "draws": 3,
+            "games": [
+                {
+                    "id": "ebccgfi",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Central Córdoba SdE",
+                            "short_name": "Central Córdoba",
+                            "url_name": "central-cordoba-sde",
+                            "id": "beafh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#9E9E9E",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Banfield",
+                            "short_name": "Banfield",
+                            "url_name": "banfield",
+                            "id": "ihi",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#02953D",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "central-cordoba-sde-vs-banfield",
+                    "scores": [
+                        0.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "26-08-2024 16:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.38,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 2.88,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 3.5,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dghiahh",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 1,
+                    "teams": [
+                        {
+                            "name": "Banfield",
+                            "short_name": "Banfield",
+                            "url_name": "banfield",
+                            "id": "ihi",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#02953D",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Central Córdoba SdE",
+                            "short_name": "Central Córdoba",
+                            "url_name": "central-cordoba-sde",
+                            "id": "beafh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#9E9E9E",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "banfield-vs-central-cordoba-sde",
+                    "scores": [
+                        1.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "17-04-2023 19:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.2,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 2.9,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 3.8,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dffjhje",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 1,
+                    "teams": [
+                        {
+                            "name": "Banfield",
+                            "short_name": "Banfield",
+                            "url_name": "banfield",
+                            "id": "ihi",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#02953D",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Central Córdoba SdE",
+                            "short_name": "Central Córdoba",
+                            "url_name": "central-cordoba-sde",
+                            "id": "beafh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#9E9E9E",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "banfield-vs-central-cordoba-sde",
+                    "scores": [
+                        2.0,
+                        1.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "15-06-2022 16:30",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 1.9,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.4,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 4.33,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dahhihd",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Central Córdoba SdE",
+                            "short_name": "Central Córdoba",
+                            "url_name": "central-cordoba-sde",
+                            "id": "beafh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#9E9E9E",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Banfield",
+                            "short_name": "Banfield",
+                            "url_name": "banfield",
+                            "id": "ihi",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#02953D",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "central-cordoba-sde-vs-banfield",
+                    "scores": [
+                        1.0,
+                        1.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "19-07-2021 18:00",
+                    "game_time_status_to_display": "Final"
+                },
+                {
+                    "id": "cgefcfa",
+                    "league": {
+                        "name": "Copa de la Liga Profesional",
+                        "id": "hcbe",
+                        "url_name": "copa-de-la-liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Central Córdoba SdE",
+                            "short_name": "Central Córdoba",
+                            "url_name": "central-cordoba-sde",
+                            "id": "beafh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#9E9E9E",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Banfield",
+                            "short_name": "Banfield",
+                            "url_name": "banfield",
+                            "id": "ihi",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#02953D",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "central-cordoba-sde-vs-banfield",
+                    "scores": [
+                        1.0,
+                        1.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "05-03-2021 21:30",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 3.1,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.2,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 2.1,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "recent_form": {
+            "home": [
+                2,
+                0,
+                1,
+                2,
+                0
+            ],
+            "away": [
+                0,
+                0,
+                1,
+                0,
+                2
+            ]
+        },
+        "standings": {
+            "title": "Posiciones",
+            "columns": [
+                {
+                    "key": "points",
+                    "display_name": "PTS",
+                    "is_bold": true
+                },
+                {
+                    "key": "games_played",
+                    "display_name": "J"
+                },
+                {
+                    "key": "ratio",
+                    "display_name": "+/-"
+                }
+            ],
+            "rows": [
+                {
+                    "num": 8,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Central Córdoba SdE",
+                            "short_name": "Central Córdoba",
+                            "url_name": "central-cordoba-sde",
+                            "id": "beafh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#9E9E9E",
+                                "text_color": "#000000"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "18"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "14"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "2"
+                        }
+                    ]
+                },
+                {
+                    "num": 14,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Banfield",
+                            "short_name": "Banfield",
+                            "url_name": "banfield",
+                            "id": "ihi",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#02953D",
+                                "text_color": "#000000"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "10"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "14"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "-7"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

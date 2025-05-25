@@ -19,7 +19,7 @@ export default function Inicio() {
   const fetchPartidosData = async (fecha: string) => {
     setLoading(true);
     try {
-      const response = await fetch(`http://172.20.10.6:3000/get_json/fecha_${fecha}.json`);
+      const response = await fetch(`http://127.0.0.1:3000/get_json/fecha_${fecha}.json`);
       const data = await response.json();
       setPartidosData(data);
       setShownDates(new Set());

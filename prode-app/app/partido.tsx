@@ -14,7 +14,7 @@ const MatchDetail: React.FC<MatchDetailProps> = ({ gameInfo }) => {
   useEffect(() => {
     if (gameInfo) {
       // Construir la URL dinámica utilizando gameInfo
-      const url = `http://172.20.10.6:3000/get_json/${gameInfo}.json`;
+      const url = `http://127.0.0.1:3000/get_json/${gameInfo}.json`;
 
       const fetchMatchData = async () => {
         try {

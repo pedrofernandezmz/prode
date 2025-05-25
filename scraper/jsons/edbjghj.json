@@ -1,0 +1,568 @@
+{
+    "TTL": 600,
+    "cache_time": 10800,
+    "game": {
+        "id": "edbjghj",
+        "league": {
+            "name": "Liga Profesional Argentina",
+            "id": "hc",
+            "url_name": "liga-profesional",
+            "country_id": "ba",
+            "show_country_flags": false,
+            "allow_open": true,
+            "country_name": "Argentina",
+            "is_international": false
+        },
+        "stage_round_name": "Apertura, Fecha 16",
+        "winner": -1,
+        "teams": [
+            {
+                "name": "Huracán",
+                "short_name": "Huracán",
+                "url_name": "huracan",
+                "id": "iie",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#FF1E1E",
+                    "text_color": "#000000"
+                },
+                "red_cards": 0
+            },
+            {
+                "name": "Barracas Central",
+                "short_name": "Barracas",
+                "url_name": "barracas-central",
+                "id": "jafb",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#D4150D",
+                    "text_color": "#FFFFFF"
+                },
+                "red_cards": 0
+            }
+        ],
+        "url_name": "huracan-vs-barracas-central",
+        "status": {
+            "enum": 1,
+            "name": "Prog.",
+            "short_name": "Prog.",
+            "symbol_name": "Prog."
+        },
+        "start_time": "04-05-2025 11:00",
+        "game_time": -1.0,
+        "game_time_to_display": "",
+        "game_time_status_to_display": "Prog.",
+        "prediction": {
+            "options": [
+                {
+                    "name": "1",
+                    "votes": 9,
+                    "percentage": 64,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjghj&vote=1"
+                },
+                {
+                    "name": "X",
+                    "votes": 1,
+                    "percentage": 7,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjghj&vote=x"
+                },
+                {
+                    "name": "2",
+                    "votes": 4,
+                    "percentage": 29,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjghj&vote=2"
+                }
+            ],
+            "total_votes": 17
+        },
+        "game_info": [
+            {
+                "name": "Estadio",
+                "value": "Estadio Tomás Adolfo Ducó"
+            },
+            {
+                "name": "Capacidad",
+                "value": "48314"
+            }
+        ],
+        "head_to_head": {
+            "home_wins": 2,
+            "away_wins": 1,
+            "draws": 2,
+            "games": [
+                {
+                    "id": "ebccegi",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 2,
+                    "teams": [
+                        {
+                            "name": "Barracas Central",
+                            "short_name": "Barracas",
+                            "url_name": "barracas-central",
+                            "id": "jafb",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#D4150D",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Huracán",
+                            "short_name": "Huracán",
+                            "url_name": "huracan",
+                            "id": "iie",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#FF1E1E",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "barracas-central-vs-huracan",
+                    "scores": [
+                        0.0,
+                        2.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "04-06-2024 15:30",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 4.0,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 2.88,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 2.2,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "eaddiaf",
+                    "league": {
+                        "name": "Copa de la Liga Profesional",
+                        "id": "hcbe",
+                        "url_name": "copa-de-la-liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 1,
+                    "teams": [
+                        {
+                            "name": "Barracas Central",
+                            "short_name": "Barracas",
+                            "url_name": "barracas-central",
+                            "id": "jafb",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#D4150D",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Huracán",
+                            "short_name": "Huracán",
+                            "url_name": "huracan",
+                            "id": "iie",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#FF1E1E",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "barracas-central-vs-huracan",
+                    "scores": [
+                        1.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "17-03-2024 16:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 3.4,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.0,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 2.4,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dihhefi",
+                    "league": {
+                        "name": "Copa de la Liga Profesional",
+                        "id": "hcbe",
+                        "url_name": "copa-de-la-liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Huracán",
+                            "short_name": "Huracán",
+                            "url_name": "huracan",
+                            "id": "iie",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#FF1E1E",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Barracas Central",
+                            "short_name": "Barracas",
+                            "url_name": "barracas-central",
+                            "id": "jafb",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#D4150D",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "huracan-vs-barracas-central",
+                    "scores": [
+                        0.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "30-10-2023 21:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 1.8,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.2,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 5.5,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dghhjih",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 1,
+                    "teams": [
+                        {
+                            "name": "Huracán",
+                            "short_name": "Huracán",
+                            "url_name": "huracan",
+                            "id": "iie",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#FF1E1E",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Barracas Central",
+                            "short_name": "Barracas",
+                            "url_name": "barracas-central",
+                            "id": "jafb",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#D4150D",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "huracan-vs-barracas-central",
+                    "scores": [
+                        2.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "17-02-2023 21:30",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 1.53,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.8,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 7.0,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dgcgacj",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Huracán",
+                            "short_name": "Huracán",
+                            "url_name": "huracan",
+                            "id": "iie",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#FF1E1E",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Barracas Central",
+                            "short_name": "Barracas",
+                            "url_name": "barracas-central",
+                            "id": "jafb",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#D4150D",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "huracan-vs-barracas-central",
+                    "scores": [
+                        1.0,
+                        1.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "13-09-2022 19:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 1.53,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 4.2,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 6.5,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "recent_form": {
+            "home": [
+                1,
+                1,
+                2,
+                1,
+                2
+            ],
+            "away": [
+                0,
+                1,
+                0,
+                1,
+                2
+            ]
+        },
+        "standings": {
+            "title": "Posiciones",
+            "columns": [
+                {
+                    "key": "points",
+                    "display_name": "PTS",
+                    "is_bold": true
+                },
+                {
+                    "key": "games_played",
+                    "display_name": "J"
+                },
+                {
+                    "key": "ratio",
+                    "display_name": "+/-"
+                }
+            ],
+            "rows": [
+                {
+                    "num": 2,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Huracán",
+                            "short_name": "Huracán",
+                            "url_name": "huracan",
+                            "id": "iie",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#FF1E1E",
+                                "text_color": "#000000"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "26"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "13"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "10"
+                        }
+                    ]
+                },
+                {
+                    "num": 7,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Barracas Central",
+                            "short_name": "Barracas",
+                            "url_name": "barracas-central",
+                            "id": "jafb",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#D4150D",
+                                "text_color": "#FFFFFF"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "20"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "13"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "3"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

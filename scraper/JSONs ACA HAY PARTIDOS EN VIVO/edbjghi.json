@@ -1,0 +1,549 @@
+{
+    "TTL": 600,
+    "cache_time": 10800,
+    "game": {
+        "id": "edbjghi",
+        "league": {
+            "name": "Liga Profesional Argentina",
+            "id": "hc",
+            "url_name": "liga-profesional",
+            "country_id": "ba",
+            "show_country_flags": false,
+            "allow_open": true,
+            "country_name": "Argentina",
+            "is_international": false
+        },
+        "stage_round_name": "Apertura, Fecha 16",
+        "winner": -1,
+        "teams": [
+            {
+                "name": "Unión de Santa Fe",
+                "short_name": "Unión",
+                "url_name": "union-santa-fe",
+                "id": "hcag",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#DB304A",
+                    "text_color": "#FFFFFF"
+                },
+                "red_cards": 0
+            },
+            {
+                "name": "Belgrano",
+                "short_name": "Belgrano",
+                "url_name": "belgrano",
+                "id": "fhid",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#2AACE2",
+                    "text_color": "#000000"
+                },
+                "red_cards": 0
+            }
+        ],
+        "url_name": "union-santa-fe-vs-belgrano",
+        "status": {
+            "enum": 1,
+            "name": "Prog.",
+            "short_name": "Prog.",
+            "symbol_name": "Prog."
+        },
+        "start_time": "04-05-2025 11:00",
+        "game_time": -1.0,
+        "game_time_to_display": "",
+        "game_time_status_to_display": "Prog.",
+        "prediction": {
+            "options": [
+                {
+                    "name": "1",
+                    "votes": 4,
+                    "percentage": 25,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjghi&vote=1"
+                },
+                {
+                    "name": "X",
+                    "votes": 1,
+                    "percentage": 6,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjghi&vote=x"
+                },
+                {
+                    "name": "2",
+                    "votes": 11,
+                    "percentage": 69,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjghi&vote=2"
+                }
+            ],
+            "total_votes": 18
+        },
+        "game_info": [
+            {
+                "name": "Estadio",
+                "value": "15 de Abril"
+            },
+            {
+                "name": "Capacidad",
+                "value": "28000"
+            }
+        ],
+        "head_to_head": {
+            "home_wins": 0,
+            "away_wins": 4,
+            "draws": 1,
+            "games": [
+                {
+                    "id": "ebccgea",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Belgrano",
+                            "short_name": "Belgrano",
+                            "url_name": "belgrano",
+                            "id": "fhid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#2AACE2",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Unión de Santa Fe",
+                            "short_name": "Unión",
+                            "url_name": "union-santa-fe",
+                            "id": "hcag",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#DB304A",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "belgrano-vs-union-santa-fe",
+                    "scores": [
+                        1.0,
+                        1.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "09-08-2024 19:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.55,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 2.75,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 3.4,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "eaddiec",
+                    "league": {
+                        "name": "Copa de la Liga Profesional",
+                        "id": "hcbe",
+                        "url_name": "copa-de-la-liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 2,
+                    "teams": [
+                        {
+                            "name": "Unión de Santa Fe",
+                            "short_name": "Unión",
+                            "url_name": "union-santa-fe",
+                            "id": "hcag",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#DB304A",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Belgrano",
+                            "short_name": "Belgrano",
+                            "url_name": "belgrano",
+                            "id": "fhid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#2AACE2",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "union-santa-fe-vs-belgrano",
+                    "scores": [
+                        1.0,
+                        2.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "06-04-2024 21:30",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 1.8,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.25,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 5.25,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dihheib",
+                    "league": {
+                        "name": "Copa de la Liga Profesional",
+                        "id": "hcbe",
+                        "url_name": "copa-de-la-liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 1,
+                    "teams": [
+                        {
+                            "name": "Belgrano",
+                            "short_name": "Belgrano",
+                            "url_name": "belgrano",
+                            "id": "fhid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#2AACE2",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Unión de Santa Fe",
+                            "short_name": "Unión",
+                            "url_name": "union-santa-fe",
+                            "id": "hcag",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#DB304A",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "belgrano-vs-union-santa-fe",
+                    "scores": [
+                        4.0,
+                        1.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "12-11-2023 19:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.62,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 2.8,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 3.1,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dghiagc",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 2,
+                    "teams": [
+                        {
+                            "name": "Unión de Santa Fe",
+                            "short_name": "Unión",
+                            "url_name": "union-santa-fe",
+                            "id": "hcag",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#DB304A",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Belgrano",
+                            "short_name": "Belgrano",
+                            "url_name": "belgrano",
+                            "id": "fhid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#2AACE2",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "union-santa-fe-vs-belgrano",
+                    "scores": [
+                        0.0,
+                        3.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "08-04-2023 18:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.25,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.1,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 3.5,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dhbjige",
+                    "league": {
+                        "name": "Partido Amistoso",
+                        "id": "dcb",
+                        "url_name": "club-friendlies",
+                        "country_id": "fe",
+                        "show_country_flags": false,
+                        "allow_open": false,
+                        "country_name": "Internacional",
+                        "is_international": true
+                    },
+                    "winner": 2,
+                    "teams": [
+                        {
+                            "name": "Unión de Santa Fe",
+                            "short_name": "Unión",
+                            "url_name": "union-santa-fe",
+                            "id": "hcag",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#DB304A",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Belgrano",
+                            "short_name": "Belgrano",
+                            "url_name": "belgrano",
+                            "id": "fhid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#2AACE2",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "union-santa-fe-vs-belgrano",
+                    "scores": [
+                        0.0,
+                        2.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "18-01-2023 21:30",
+                    "game_time_status_to_display": "Final"
+                }
+            ]
+        },
+        "recent_form": {
+            "home": [
+                2,
+                0,
+                1,
+                1,
+                0
+            ],
+            "away": [
+                1,
+                0,
+                1,
+                2,
+                2
+            ]
+        },
+        "standings": {
+            "title": "Posiciones",
+            "columns": [
+                {
+                    "key": "points",
+                    "display_name": "PTS",
+                    "is_bold": true
+                },
+                {
+                    "key": "games_played",
+                    "display_name": "J"
+                },
+                {
+                    "key": "ratio",
+                    "display_name": "+/-"
+                }
+            ],
+            "rows": [
+                {
+                    "num": 12,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Belgrano",
+                            "short_name": "Belgrano",
+                            "url_name": "belgrano",
+                            "id": "fhid",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#2AACE2",
+                                "text_color": "#000000"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "14"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "13"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "-10"
+                        }
+                    ]
+                },
+                {
+                    "num": 13,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Unión de Santa Fe",
+                            "short_name": "Unión",
+                            "url_name": "union-santa-fe",
+                            "id": "hcag",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#DB304A",
+                                "text_color": "#FFFFFF"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "13"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "14"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "-5"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

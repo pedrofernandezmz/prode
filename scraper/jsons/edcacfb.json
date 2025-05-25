@@ -1,0 +1,1852 @@
+{
+    "TTL": 600,
+    "cache_time": 259200,
+    "game": {
+        "id": "edcacfb",
+        "league": {
+            "name": "Liga Profesional Argentina",
+            "id": "hc",
+            "url_name": "liga-profesional",
+            "country_id": "ba",
+            "show_country_flags": false,
+            "allow_open": true,
+            "country_name": "Argentina",
+            "is_international": false
+        },
+        "stage_round_name": "Apertura, Fecha 3",
+        "winner": 1,
+        "teams": [
+            {
+                "name": "Newell's Old Boys",
+                "short_name": "Newell's",
+                "url_name": "newell's-old-boys",
+                "id": "ihh",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#ED1C24",
+                    "text_color": "#000000"
+                },
+                "red_cards": 0,
+                "goals": [
+                    {
+                        "player_name": "Gonzalo Maroni",
+                        "player_sname": "Maroni",
+                        "time": 28.0,
+                        "time_to_display": "28'"
+                    }
+                ]
+            },
+            {
+                "name": "Aldosivi",
+                "short_name": "Aldosivi",
+                "url_name": "aldosivi",
+                "id": "hccd",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#39B54A",
+                    "text_color": "#000000"
+                },
+                "red_cards": 0
+            }
+        ],
+        "url_name": "newell's-old-boys-vs-aldosivi",
+        "scores": [
+            1.0,
+            0.0
+        ],
+        "status": {
+            "enum": 3,
+            "name": "Finalizado",
+            "short_name": "Final",
+            "symbol_name": "Fin"
+        },
+        "start_time": "02-02-2025 19:15",
+        "game_time": 90.0,
+        "game_time_to_display": "",
+        "game_time_status_to_display": "Final",
+        "players": {
+            "lineups": {
+                "support_visual_lineups": true,
+                "teams": [
+                    {
+                        "status": "Confirmado",
+                        "formation": "3-4-3",
+                        "team_num": 1,
+                        "starting": [
+                            {
+                                "jersey_num": 1,
+                                "name": "Keylor Navas",
+                                "player_short_name": "Navas",
+                                "position": "Arquero",
+                                "formation_position": "Arquero",
+                                "country_id": "bfd",
+                                "pitch_location": {
+                                    "x": 0,
+                                    "y": 50
+                                },
+                                "age": 38,
+                                "height": "1.85"
+                            },
+                            {
+                                "jersey_num": 3,
+                                "name": "Lucas Sosa",
+                                "player_short_name": "Sosa",
+                                "position": "Defensor",
+                                "formation_position": "Defensa Lateral Derecho",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 33,
+                                    "y": 25
+                                },
+                                "age": 30,
+                                "height": "1.83"
+                            },
+                            {
+                                "jersey_num": 6,
+                                "name": "Saúl Salcedo",
+                                "player_short_name": "Salcedo",
+                                "position": "Defensor",
+                                "formation_position": "Defensa Central",
+                                "country_id": "bai",
+                                "pitch_location": {
+                                    "x": 33,
+                                    "y": 50
+                                },
+                                "age": 27,
+                                "height": "1.83"
+                            },
+                            {
+                                "jersey_num": 2,
+                                "name": "Tomás Jacob",
+                                "player_short_name": "Jacob",
+                                "position": "Defensor",
+                                "formation_position": "Defensa Central",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 33,
+                                    "y": 75
+                                },
+                                "age": 20,
+                                "height": "1.80"
+                            },
+                            {
+                                "jersey_num": 25,
+                                "name": "Alejo Tabares",
+                                "player_short_name": "Tabares",
+                                "position": "Defensor",
+                                "formation_position": "Defensa Central",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 66,
+                                    "y": 0
+                                },
+                                "substitution": {
+                                    "time": 81.0,
+                                    "player": 21,
+                                    "type": 2
+                                },
+                                "height": "1.79",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 81.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 27,
+                                "name": "Luca Regiardo",
+                                "player_short_name": "Regiardo",
+                                "position": "Mediocampista",
+                                "formation_position": "Mediocampista Central",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 66,
+                                    "y": 33
+                                },
+                                "age": 18
+                            },
+                            {
+                                "jersey_num": 5,
+                                "name": "Ever Banega",
+                                "player_short_name": "Ever Banega",
+                                "position": "Mediocampista",
+                                "formation_position": "Mediocampista Central",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 66,
+                                    "y": 66
+                                },
+                                "substitution": {
+                                    "time": 69.0,
+                                    "player": 34,
+                                    "type": 2
+                                },
+                                "age": 36,
+                                "height": "1.74",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 69.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 7,
+                                "name": "Fernando Cardozo",
+                                "player_short_name": "Cardozo",
+                                "position": "Mediocampista",
+                                "formation_position": "Volante Derecho",
+                                "country_id": "bai",
+                                "pitch_location": {
+                                    "x": 66,
+                                    "y": 100
+                                },
+                                "age": 24,
+                                "height": "1.73"
+                            },
+                            {
+                                "jersey_num": 20,
+                                "name": "Gonzalo Maroni",
+                                "player_short_name": "Maroni",
+                                "position": "Mediocampista",
+                                "formation_position": "Mediocampista Ofensivo",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 99,
+                                    "y": 0
+                                },
+                                "substitution": {
+                                    "time": 62.0,
+                                    "player": 4,
+                                    "type": 2
+                                },
+                                "age": 26,
+                                "height": "1.70",
+                                "events": {
+                                    "goals": {
+                                        "goals": 1,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 62.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 39,
+                                "name": "Nazareno Funez",
+                                "player_short_name": "Funez",
+                                "position": "Delantero",
+                                "formation_position": "Centro Delantero",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 99,
+                                    "y": 50
+                                },
+                                "substitution": {
+                                    "time": 70.0,
+                                    "player": 9,
+                                    "type": 2
+                                },
+                                "age": 23,
+                                "height": "1.87",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 70.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 24,
+                                "name": "Mateo Silvetti",
+                                "player_short_name": "Silvetti",
+                                "position": "Delantero",
+                                "formation_position": "Centro Delantero",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 99,
+                                    "y": 100
+                                },
+                                "substitution": {
+                                    "time": 81.0,
+                                    "player": 15,
+                                    "type": 2
+                                },
+                                "age": 19,
+                                "height": "1.75",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 81.0
+                                    }
+                                }
+                            }
+                        ],
+                        "bench": [
+                            {
+                                "jersey_num": 9,
+                                "name": "Juan Manuel García",
+                                "player_short_name": "García",
+                                "position": "Delantero",
+                                "formation_position": "Centro Delantero",
+                                "country_id": "ba",
+                                "substitution": {
+                                    "time": 70.0,
+                                    "player": 39,
+                                    "type": 1
+                                },
+                                "age": 32,
+                                "height": "1.83",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 70.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 21,
+                                "name": "Luciano Herrera",
+                                "player_short_name": "Herrera",
+                                "position": "Delantero",
+                                "formation_position": "Segundo Delantero",
+                                "country_id": "ba",
+                                "substitution": {
+                                    "time": 81.0,
+                                    "player": 25,
+                                    "type": 1
+                                },
+                                "age": 28,
+                                "height": "1.79",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 81.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 15,
+                                "name": "Martín Luciano",
+                                "player_short_name": "Luciano",
+                                "position": "Defensor",
+                                "formation_position": "Defensa Lateral Izquierdo",
+                                "country_id": "ba",
+                                "substitution": {
+                                    "time": 81.0,
+                                    "player": 24,
+                                    "type": 1
+                                },
+                                "age": 21,
+                                "height": "1.77",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 81.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 4,
+                                "name": "Alejo Montero",
+                                "player_short_name": "Montero",
+                                "position": "Mediocampista",
+                                "formation_position": "Volante Derecho",
+                                "country_id": "ba",
+                                "substitution": {
+                                    "time": 62.0,
+                                    "player": 20,
+                                    "type": 1
+                                },
+                                "age": 26,
+                                "height": "1.71",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 62.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 34,
+                                "name": "David Sotelo",
+                                "player_short_name": "D. Sotelo",
+                                "position": "Mediocampista",
+                                "formation_position": "Mediocampista Ofensivo",
+                                "country_id": "ba",
+                                "substitution": {
+                                    "time": 69.0,
+                                    "player": 5,
+                                    "type": 1
+                                },
+                                "age": 21,
+                                "height": "1.73",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 69.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 37,
+                                "name": "Luciano Lollo",
+                                "player_short_name": "Lollo",
+                                "position": "Defensor",
+                                "formation_position": "Defensa Central",
+                                "country_id": "ba",
+                                "age": 38,
+                                "height": "1.84"
+                            },
+                            {
+                                "jersey_num": 29,
+                                "name": "Lucas Mihovilcevich",
+                                "player_short_name": "Mihovilcevich",
+                                "position": "Defensor",
+                                "formation_position": "Defensa Central",
+                                "country_id": "ba",
+                                "age": 21,
+                                "height": "1.81"
+                            },
+                            {
+                                "jersey_num": 43,
+                                "name": "Lisandro Montenegro",
+                                "player_short_name": "Lisandro Montenegro",
+                                "position": "Mediocampista",
+                                "formation_position": "Mediocampista Central",
+                                "country_id": "ba",
+                                "age": 22,
+                                "height": "1.73"
+                            },
+                            {
+                                "jersey_num": 26,
+                                "name": "Juan Ignacio Méndez",
+                                "player_short_name": "Méndez",
+                                "position": "Mediocampista",
+                                "formation_position": "Mediocampista Central",
+                                "country_id": "ba",
+                                "age": 27,
+                                "height": "1.75"
+                            },
+                            {
+                                "jersey_num": 36,
+                                "name": "Joaquín Plaza",
+                                "player_short_name": "Plaza",
+                                "position": "Delantero",
+                                "formation_position": "Centro Delantero",
+                                "country_id": "ba",
+                                "age": 20,
+                                "height": "1.75"
+                            },
+                            {
+                                "jersey_num": 30,
+                                "name": "Josue Reinatti",
+                                "player_short_name": "Reinatti",
+                                "position": "Arquero",
+                                "formation_position": "Arquero",
+                                "country_id": "ba",
+                                "age": 21,
+                                "height": "1.86"
+                            },
+                            {
+                                "jersey_num": 28,
+                                "name": "Fabricio Tirado",
+                                "player_short_name": "Tirado",
+                                "position": "Mediocampista",
+                                "formation_position": "Mediocampista Central",
+                                "country_id": "ba",
+                                "age": 20
+                            }
+                        ],
+                        "staff": [
+                            {
+                                "jersey_num": -1,
+                                "name": "Mariano Soso",
+                                "player_short_name": "Soso",
+                                "position": "Dirección",
+                                "formation_position": "Entrenador",
+                                "country_id": "ba",
+                                "age": 43
+                            }
+                        ]
+                    },
+                    {
+                        "status": "Confirmado",
+                        "formation": "4-2-3-1",
+                        "team_num": 2,
+                        "starting": [
+                            {
+                                "jersey_num": 1,
+                                "name": "Jorge Carranza",
+                                "player_short_name": "Carranza",
+                                "position": "Arquero",
+                                "formation_position": "Arquero",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 0,
+                                    "y": 50
+                                },
+                                "age": 43,
+                                "height": "1.85"
+                            },
+                            {
+                                "jersey_num": 3,
+                                "name": "Ignacio Guerrico",
+                                "player_short_name": "Ignacio Guerrico",
+                                "position": "Defensor",
+                                "formation_position": "Defensa Lateral Izquierdo",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 25,
+                                    "y": 0
+                                },
+                                "age": 26,
+                                "height": "1.75"
+                            },
+                            {
+                                "jersey_num": 6,
+                                "name": "Gonzalo Mottes",
+                                "player_short_name": "Mottes",
+                                "position": "Defensor",
+                                "formation_position": "Defensa Central",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 25,
+                                    "y": 33
+                                },
+                                "age": 27,
+                                "height": "1.91"
+                            },
+                            {
+                                "jersey_num": 25,
+                                "name": "Néstor Breitenbruch",
+                                "player_short_name": "Breitenbruch",
+                                "position": "Defensor",
+                                "formation_position": "Defensa Lateral Derecho",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 25,
+                                    "y": 66
+                                },
+                                "age": 29,
+                                "height": "1.78"
+                            },
+                            {
+                                "jersey_num": 4,
+                                "name": "Rodrigo Gonzalez",
+                                "player_short_name": "González",
+                                "position": "Defensor",
+                                "formation_position": "Defensa Lateral Derecho",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 25,
+                                    "y": 100
+                                },
+                                "age": 25,
+                                "height": "1.75"
+                            },
+                            {
+                                "jersey_num": 29,
+                                "name": "Marcelo Esponda",
+                                "player_short_name": "Esponda",
+                                "position": "Mediocampista",
+                                "formation_position": "Volante Derecho",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 50,
+                                    "y": 20
+                                },
+                                "substitution": {
+                                    "time": 80.0,
+                                    "player": 5,
+                                    "type": 2
+                                },
+                                "age": 22,
+                                "height": "1.79",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 80.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 21,
+                                "name": "Tobías Leiva",
+                                "player_short_name": "Leiva",
+                                "position": "Mediocampista",
+                                "formation_position": "Volante Derecho",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 50,
+                                    "y": 80
+                                },
+                                "age": 21,
+                                "height": "1.85"
+                            },
+                            {
+                                "jersey_num": 7,
+                                "name": "Natanael Guzmán",
+                                "player_short_name": "Natanael Guzmán",
+                                "position": "Delantero",
+                                "formation_position": "Delantero Derecho",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 75,
+                                    "y": 0
+                                },
+                                "substitution": {
+                                    "time": 60.0,
+                                    "player": 80,
+                                    "type": 2
+                                },
+                                "age": 25,
+                                "height": "1.71",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 60.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 40,
+                                "name": "Justo Giani",
+                                "player_short_name": "Giani",
+                                "position": "Delantero",
+                                "formation_position": "Centro Delantero",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 75,
+                                    "y": 50
+                                },
+                                "substitution": {
+                                    "time": 80.0,
+                                    "player": 22,
+                                    "type": 2
+                                },
+                                "age": 26,
+                                "height": "1.80",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 80.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 11,
+                                "name": "Agustín Palavecino",
+                                "player_short_name": "Palavecino",
+                                "position": "Delantero",
+                                "formation_position": "Centro Delantero",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 75,
+                                    "y": 100
+                                },
+                                "substitution": {
+                                    "time": 72.0,
+                                    "player": 18,
+                                    "type": 2
+                                },
+                                "age": 22,
+                                "height": "1.94",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 72.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 9,
+                                "name": "Elias Torres",
+                                "player_short_name": "Torres",
+                                "position": "Delantero",
+                                "formation_position": "Centro Delantero",
+                                "country_id": "ba",
+                                "pitch_location": {
+                                    "x": 100,
+                                    "y": 50
+                                },
+                                "age": 24,
+                                "height": "1.86"
+                            }
+                        ],
+                        "bench": [
+                            {
+                                "jersey_num": 5,
+                                "name": "Roberto Bochi",
+                                "player_short_name": "Bochi",
+                                "position": "Mediocampista",
+                                "formation_position": "Mediocampista Central",
+                                "country_id": "ba",
+                                "substitution": {
+                                    "time": 80.0,
+                                    "player": 29,
+                                    "type": 1
+                                },
+                                "age": 35,
+                                "height": "1.72",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 80.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 80,
+                                "name": "Lautaro Chávez",
+                                "player_short_name": "Chávez",
+                                "position": "Mediocampista",
+                                "formation_position": "Mediocampista Central",
+                                "country_id": "ba",
+                                "substitution": {
+                                    "time": 60.0,
+                                    "player": 7,
+                                    "type": 1
+                                },
+                                "age": 24,
+                                "height": "1.70",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 60.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 22,
+                                "name": "Alexis Domínguez",
+                                "player_short_name": "Domínguez",
+                                "position": "Delantero",
+                                "formation_position": "Centro Delantero",
+                                "country_id": "ba",
+                                "substitution": {
+                                    "time": 80.0,
+                                    "player": 40,
+                                    "type": 1
+                                },
+                                "age": 28,
+                                "height": "1.85",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 80.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 18,
+                                "name": "Ayrton Preciado",
+                                "player_short_name": "Ayrton Preciado",
+                                "position": "Mediocampista",
+                                "formation_position": "Volante Izquierdo",
+                                "country_id": "fb",
+                                "substitution": {
+                                    "time": 72.0,
+                                    "player": 11,
+                                    "type": 1
+                                },
+                                "age": 30,
+                                "height": "1.81",
+                                "events": {
+                                    "goals": {
+                                        "goals": 0,
+                                        "own_goals": 0
+                                    },
+                                    "cards": {
+                                        "yellow": false,
+                                        "red": false,
+                                        "red_type": -1
+                                    },
+                                    "substitution": {
+                                        "has_substitution": true,
+                                        "time": 72.0
+                                    }
+                                }
+                            },
+                            {
+                                "jersey_num": 44,
+                                "name": "Giuliano Cerato",
+                                "player_short_name": "Cerato",
+                                "position": "Defensor",
+                                "formation_position": "Defensa Lateral Derecho",
+                                "country_id": "ba",
+                                "age": 26,
+                                "height": "1.70"
+                            },
+                            {
+                                "jersey_num": 41,
+                                "name": "Nahuel González",
+                                "player_short_name": "González",
+                                "position": "Arquero",
+                                "formation_position": "Arquero",
+                                "country_id": "ba",
+                                "age": 20,
+                                "height": "1.87"
+                            },
+                            {
+                                "jersey_num": 2,
+                                "name": "Tomás Kummer",
+                                "player_short_name": "Kummer",
+                                "position": "Defensor",
+                                "formation_position": "Defensa Central",
+                                "country_id": "ba",
+                                "age": 20,
+                                "height": "1.86"
+                            },
+                            {
+                                "jersey_num": 23,
+                                "name": "Gabriel Paredes",
+                                "player_short_name": "Gabriel Paredes",
+                                "position": "Mediocampista",
+                                "formation_position": "Mediocampista Central",
+                                "country_id": "ba",
+                                "age": 21,
+                                "height": "1.73"
+                            },
+                            {
+                                "jersey_num": 8,
+                                "name": "Tiago Serrago",
+                                "player_short_name": "Serrago",
+                                "position": "Mediocampista",
+                                "formation_position": "Mediocampista Ofensivo",
+                                "country_id": "ba",
+                                "age": 20,
+                                "height": "1.75"
+                            }
+                        ],
+                        "staff": [
+                            {
+                                "jersey_num": -1,
+                                "name": "Andrés Yllana",
+                                "player_short_name": "Yllana",
+                                "position": "Dirección",
+                                "formation_position": "Entrenador",
+                                "country_id": "ba",
+                                "age": 50
+                            }
+                        ]
+                    }
+                ]
+            },
+            "missing_players": [
+                [
+                    {
+                        "jersey_num": 14,
+                        "name": "Armando Méndez",
+                        "player_short_name": "Méndez",
+                        "position": "Defensor",
+                        "formation_position": "Defensa Central",
+                        "country_id": "bbb",
+                        "age": 29,
+                        "height": "1.83",
+                        "missing_details": {
+                            "type": 1,
+                            "reason": "Lesionado",
+                            "will_play_status": 2,
+                            "will_play": "No jugarán"
+                        }
+                    }
+                ],
+                [
+                    {
+                        "jersey_num": 10,
+                        "name": "Matías Ariel García",
+                        "player_short_name": "García",
+                        "position": "Mediocampista",
+                        "formation_position": "Mediocampista Central",
+                        "country_id": "ba",
+                        "age": 33,
+                        "height": "1.74",
+                        "missing_details": {
+                            "type": 1,
+                            "reason": "Lesionado",
+                            "will_play_status": 2,
+                            "will_play": "No jugarán"
+                        }
+                    }
+                ]
+            ]
+        },
+        "prediction": {
+            "options": [
+                {
+                    "name": "1",
+                    "votes": 461,
+                    "percentage": 74,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edcacfb&vote=1"
+                },
+                {
+                    "name": "X",
+                    "votes": 75,
+                    "percentage": 12,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edcacfb&vote=x"
+                },
+                {
+                    "name": "2",
+                    "votes": 86,
+                    "percentage": 14,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edcacfb&vote=2"
+                }
+            ],
+            "total_votes": 472,
+            "odds": [
+                {
+                    "name": "1",
+                    "value": 1.73,
+                    "trend": 0
+                },
+                {
+                    "name": "X",
+                    "value": 3.4,
+                    "trend": 0
+                },
+                {
+                    "name": "2",
+                    "value": 5.25,
+                    "trend": 0
+                }
+            ]
+        },
+        "game_info": [
+            {
+                "name": "Estadio",
+                "value": "Estadio Marcelo Alberto Bielsa"
+            },
+            {
+                "name": "Capacidad",
+                "value": "42000"
+            },
+            {
+                "name": "Árbitro",
+                "value": "Andrés Merlos"
+            },
+            {
+                "name": "Arg TV",
+                "value": "TNT Sports, TNT Sports Premium"
+            }
+        ],
+        "events": [
+            {
+                "name": "Entretiempo",
+                "show_stage_title": true,
+                "is_penalties_stage": false,
+                "scores": [
+                    1.0,
+                    0.0
+                ],
+                "rows": [
+                    {
+                        "time": "28'",
+                        "events": [
+                            {
+                                "type": 1,
+                                "time": "28'",
+                                "team": 1,
+                                "texts": [
+                                    "Gonzalo Maroni",
+                                    "Alejo Tabares"
+                                ],
+                                "player_jersey_num": 20
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Fin de los 90 minutos",
+                "show_stage_title": true,
+                "is_penalties_stage": false,
+                "scores": [
+                    1.0,
+                    0.0
+                ],
+                "rows": [
+                    {
+                        "time": "60'",
+                        "events": [
+                            {
+                                "type": 15,
+                                "time": "60'",
+                                "team": 2,
+                                "texts": [
+                                    "Lautaro Chávez",
+                                    "Natanael Guzmán"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "time": "62'",
+                        "events": [
+                            {
+                                "type": 15,
+                                "time": "62'",
+                                "team": 1,
+                                "texts": [
+                                    "Alejo Montero",
+                                    "Gonzalo Maroni"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "time": "69'",
+                        "events": [
+                            {
+                                "type": 15,
+                                "time": "69'",
+                                "team": 1,
+                                "texts": [
+                                    "David Sotelo",
+                                    "Ever Banega"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "time": "70'",
+                        "events": [
+                            {
+                                "type": 15,
+                                "time": "70'",
+                                "team": 1,
+                                "texts": [
+                                    "Juan Manuel García",
+                                    "Nazareno Funez"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "time": "72'",
+                        "events": [
+                            {
+                                "type": 15,
+                                "time": "72'",
+                                "team": 2,
+                                "texts": [
+                                    "Ayrton Preciado",
+                                    "Agustín Palavecino"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "time": "80'",
+                        "events": [
+                            {
+                                "type": 15,
+                                "time": "80'",
+                                "team": 2,
+                                "texts": [
+                                    "Alexis Domínguez",
+                                    "Justo Giani"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "time": "80'",
+                        "events": [
+                            {
+                                "type": 15,
+                                "time": "80'",
+                                "team": 2,
+                                "texts": [
+                                    "Roberto Bochi",
+                                    "Marcelo Esponda"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "time": "81'",
+                        "events": [
+                            {
+                                "type": 15,
+                                "time": "81'",
+                                "team": 1,
+                                "texts": [
+                                    "Martín Luciano",
+                                    "Mateo Silvetti"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "time": "81'",
+                        "events": [
+                            {
+                                "type": 15,
+                                "time": "81'",
+                                "team": 1,
+                                "texts": [
+                                    "Luciano Herrera",
+                                    "Alejo Tabares"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "statistics": [
+            {
+                "name": "Total Remates",
+                "values": [
+                    "13",
+                    "11"
+                ],
+                "percentages": [
+                    0.54,
+                    0.46
+                ]
+            },
+            {
+                "name": "Remates al arco",
+                "values": [
+                    "4",
+                    "2"
+                ],
+                "percentages": [
+                    0.67,
+                    0.33
+                ]
+            },
+            {
+                "name": "Posesión",
+                "values": [
+                    "47%",
+                    "53%"
+                ],
+                "percentages": [
+                    0.47,
+                    0.53
+                ]
+            },
+            {
+                "name": "Ataques",
+                "values": [
+                    "79",
+                    "97"
+                ],
+                "percentages": [
+                    0.45,
+                    0.55
+                ]
+            },
+            {
+                "name": "Saques de falta",
+                "values": [
+                    "13",
+                    "9"
+                ],
+                "percentages": [
+                    0.59,
+                    0.41
+                ]
+            },
+            {
+                "name": "Saques de Esquina",
+                "values": [
+                    "5",
+                    "5"
+                ],
+                "percentages": [
+                    0.5,
+                    0.5
+                ]
+            },
+            {
+                "name": "Fueras de Juego",
+                "values": [
+                    "1",
+                    "2"
+                ],
+                "percentages": [
+                    0.33,
+                    0.67
+                ]
+            },
+            {
+                "name": "Faltas",
+                "values": [
+                    "9",
+                    "13"
+                ],
+                "percentages": [
+                    0.41,
+                    0.59
+                ]
+            },
+            {
+                "name": "Tarjetas Amarillas",
+                "values": [
+                    "0",
+                    "0"
+                ],
+                "percentages": [
+                    0.5,
+                    0.5
+                ]
+            },
+            {
+                "name": "Tarjetas Rojas",
+                "values": [
+                    "0",
+                    "0"
+                ],
+                "percentages": [
+                    0.5,
+                    0.5
+                ]
+            }
+        ],
+        "head_to_head": {
+            "home_wins": 4,
+            "away_wins": 0,
+            "draws": 1,
+            "games": [
+                {
+                    "id": "edcacfb",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "stage_round_name": "Apertura",
+                    "winner": 1,
+                    "teams": [
+                        {
+                            "name": "Newell's Old Boys",
+                            "short_name": "Newell's",
+                            "url_name": "newell's-old-boys",
+                            "id": "ihh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#ED1C24",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Aldosivi",
+                            "short_name": "Aldosivi",
+                            "url_name": "aldosivi",
+                            "id": "hccd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#39B54A",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "newell's-old-boys-vs-aldosivi",
+                    "scores": [
+                        1.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "02-02-2025 19:15",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 1.73,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.4,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 5.25,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dgcgadc",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 2,
+                    "teams": [
+                        {
+                            "name": "Aldosivi",
+                            "short_name": "Aldosivi",
+                            "url_name": "aldosivi",
+                            "id": "hccd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#39B54A",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Newell's Old Boys",
+                            "short_name": "Newell's",
+                            "url_name": "newell's-old-boys",
+                            "id": "ihh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#ED1C24",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "aldosivi-vs-newell's-old-boys",
+                    "scores": [
+                        1.0,
+                        2.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "14-09-2022 14:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.7,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.2,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 2.7,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dfhddjd",
+                    "league": {
+                        "name": "Copa Argentina",
+                        "id": "gea",
+                        "url_name": "copa-argentina",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 2,
+                    "teams": [
+                        {
+                            "name": "Aldosivi",
+                            "short_name": "Aldosivi",
+                            "url_name": "aldosivi",
+                            "id": "hccd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#39B54A",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Newell's Old Boys",
+                            "short_name": "Newell's",
+                            "url_name": "newell's-old-boys",
+                            "id": "ihh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#ED1C24",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "aldosivi-vs-newell's-old-boys",
+                    "scores": [
+                        2.0,
+                        4.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "03-08-2022 21:10",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 5.5,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 4.0,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 1.62,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "daihiea",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Newell's Old Boys",
+                            "short_name": "Newell's",
+                            "url_name": "newell's-old-boys",
+                            "id": "ihh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#ED1C24",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Aldosivi",
+                            "short_name": "Aldosivi",
+                            "url_name": "aldosivi",
+                            "id": "hccd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#39B54A",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "newell's-old-boys-vs-aldosivi",
+                    "scores": [
+                        0.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "21-10-2021 16:45",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 1.72,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.75,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 4.33,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "caefedd",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 1,
+                    "teams": [
+                        {
+                            "name": "Newell's Old Boys",
+                            "short_name": "Newell's",
+                            "url_name": "newell's-old-boys",
+                            "id": "ihh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#ED1C24",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Aldosivi",
+                            "short_name": "Aldosivi",
+                            "url_name": "aldosivi",
+                            "id": "hccd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#39B54A",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "newell's-old-boys-vs-aldosivi",
+                    "scores": [
+                        2.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "22-09-2019 11:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 1.45,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.8,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 8.5,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "recent_form": {
+            "home": [
+                2,
+                1,
+                0,
+                1,
+                2
+            ],
+            "away": [
+                0,
+                2,
+                1,
+                0,
+                1
+            ]
+        },
+        "standings": {
+            "title": "Posiciones",
+            "columns": [
+                {
+                    "key": "points",
+                    "display_name": "PTS",
+                    "is_bold": true
+                },
+                {
+                    "key": "games_played",
+                    "display_name": "J"
+                },
+                {
+                    "key": "ratio",
+                    "display_name": "+/-"
+                }
+            ],
+            "rows": [
+                {
+                    "num": 11,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Newell's Old Boys",
+                            "short_name": "Newell's",
+                            "url_name": "newell's-old-boys",
+                            "id": "ihh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#ED1C24",
+                                "text_color": "#000000"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "16"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "14"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "-4"
+                        }
+                    ]
+                },
+                {
+                    "num": 15,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Aldosivi",
+                            "short_name": "Aldosivi",
+                            "url_name": "aldosivi",
+                            "id": "hccd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#39B54A",
+                                "text_color": "#000000"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "9"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "13"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "-13"
+                        }
+                    ]
+                }
+            ]
+        },
+        "videos": [
+            {
+                "source": "youtube",
+                "url": "https://www.youtube.com/watch?v=ZK_zDUA49yY",
+                "video_id": "ZK_zDUA49yY",
+                "thumbnail_url": "https://img.youtube.com/vi/ZK_zDUA49yY/maxresdefault.jpg",
+                "embedding_allowed": true
+            }
+        ]
+    }
+}

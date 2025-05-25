@@ -36,7 +36,7 @@ export default function News() {
 
   // Función para manejar el click en los iconos del scroll horizontal
   const handleIconPress = (key: string) => {
-    fetchNewsData(`http://172.20.10.6:3000/get_json/news_${key}.json`); // Llamar a fetch con el key del icono
+    fetchNewsData(`http://127.0.0.1:3000/get_json/news_${key}.json`); // Llamar a fetch con el key del icono
   };
 
   const handlePress = (url: string) => {
@@ -57,7 +57,7 @@ export default function News() {
 
   // Cargar las noticias por defecto al iniciar el componente
   useEffect(() => {
-    fetchNewsData('http://172.20.10.6:3000/get_json/news.json'); // URL por defecto
+    fetchNewsData('http://127.0.0.1:3000/get_json/news.json'); // URL por defecto
   }, []);
 
   return (

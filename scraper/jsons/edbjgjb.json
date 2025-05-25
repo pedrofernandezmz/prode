@@ -1,0 +1,585 @@
+{
+    "TTL": 600,
+    "cache_time": 10800,
+    "game": {
+        "id": "edbjgjb",
+        "league": {
+            "name": "Liga Profesional Argentina",
+            "id": "hc",
+            "url_name": "liga-profesional",
+            "country_id": "ba",
+            "show_country_flags": false,
+            "allow_open": true,
+            "country_name": "Argentina",
+            "is_international": false
+        },
+        "stage_round_name": "Apertura, Fecha 15",
+        "winner": -1,
+        "teams": [
+            {
+                "name": "Defensa y Justicia",
+                "short_name": "Defensa",
+                "url_name": "defensa-y-justicia",
+                "id": "hcbh",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#22A07D",
+                    "text_color": "#000000"
+                },
+                "red_cards": 0
+            },
+            {
+                "name": "Racing Club",
+                "short_name": "Racing",
+                "url_name": "racing-club",
+                "id": "ihg",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#029CDC",
+                    "text_color": "#000000"
+                },
+                "red_cards": 0
+            }
+        ],
+        "url_name": "defensa-y-justicia-vs-racing-club",
+        "status": {
+            "enum": 1,
+            "name": "Prog.",
+            "short_name": "Prog.",
+            "symbol_name": "Prog."
+        },
+        "start_time": "28-04-2025 19:30",
+        "game_time": -1.0,
+        "game_time_to_display": "",
+        "game_time_status_to_display": "Prog.",
+        "prediction": {
+            "options": [
+                {
+                    "name": "1",
+                    "votes": 13,
+                    "percentage": 22,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjgjb&vote=1"
+                },
+                {
+                    "name": "X",
+                    "votes": 3,
+                    "percentage": 5,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjgjb&vote=x"
+                },
+                {
+                    "name": "2",
+                    "votes": 42,
+                    "percentage": 73,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjgjb&vote=2"
+                }
+            ],
+            "total_votes": 44,
+            "odds": [
+                {
+                    "name": "1",
+                    "value": 2.45,
+                    "trend": 0
+                },
+                {
+                    "name": "X",
+                    "value": 3.5,
+                    "trend": 0
+                },
+                {
+                    "name": "2",
+                    "value": 2.7,
+                    "trend": 0
+                }
+            ]
+        },
+        "game_info": [
+            {
+                "name": "Estadio",
+                "value": "Estadio Norberto Tito Tomaghello"
+            },
+            {
+                "name": "Capacidad",
+                "value": "18000"
+            }
+        ],
+        "head_to_head": {
+            "home_wins": 0,
+            "away_wins": 1,
+            "draws": 4,
+            "games": [
+                {
+                    "id": "ebccheg",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 1,
+                    "teams": [
+                        {
+                            "name": "Racing Club",
+                            "short_name": "Racing",
+                            "url_name": "racing-club",
+                            "id": "ihg",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#029CDC",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Defensa y Justicia",
+                            "short_name": "Defensa",
+                            "url_name": "defensa-y-justicia",
+                            "id": "hcbh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#22A07D",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "racing-club-vs-defensa-y-justicia",
+                    "scores": [
+                        4.0,
+                        3.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "19-10-2024 17:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 1.62,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.8,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 5.75,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "eaddibb",
+                    "league": {
+                        "name": "Copa de la Liga Profesional",
+                        "id": "hcbe",
+                        "url_name": "copa-de-la-liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Racing Club",
+                            "short_name": "Racing",
+                            "url_name": "racing-club",
+                            "id": "ihg",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#029CDC",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Defensa y Justicia",
+                            "short_name": "Defensa",
+                            "url_name": "defensa-y-justicia",
+                            "id": "hcbh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#22A07D",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "racing-club-vs-defensa-y-justicia",
+                    "scores": [
+                        1.0,
+                        1.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "16-03-2024 19:15",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 1.6,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 4.0,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 5.75,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dihhefh",
+                    "league": {
+                        "name": "Copa de la Liga Profesional",
+                        "id": "hcbe",
+                        "url_name": "copa-de-la-liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Defensa y Justicia",
+                            "short_name": "Defensa",
+                            "url_name": "defensa-y-justicia",
+                            "id": "hcbh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#22A07D",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Racing Club",
+                            "short_name": "Racing",
+                            "url_name": "racing-club",
+                            "id": "ihg",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#029CDC",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "defensa-y-justicia-vs-racing-club",
+                    "scores": [
+                        2.0,
+                        2.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "01-11-2023 20:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.8,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.6,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 2.4,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dghibei",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Defensa y Justicia",
+                            "short_name": "Defensa",
+                            "url_name": "defensa-y-justicia",
+                            "id": "hcbh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#22A07D",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Racing Club",
+                            "short_name": "Racing",
+                            "url_name": "racing-club",
+                            "id": "ihg",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#029CDC",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "defensa-y-justicia-vs-racing-club",
+                    "scores": [
+                        1.0,
+                        1.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "28-05-2023 16:30",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.15,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.6,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 3.2,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dgcgahi",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Defensa y Justicia",
+                            "short_name": "Defensa",
+                            "url_name": "defensa-y-justicia",
+                            "id": "hcbh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#22A07D",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Racing Club",
+                            "short_name": "Racing",
+                            "url_name": "racing-club",
+                            "id": "ihg",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#029CDC",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "defensa-y-justicia-vs-racing-club",
+                    "scores": [
+                        3.0,
+                        3.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "05-10-2022 19:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 3.1,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.25,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 2.37,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "recent_form": {
+            "home": [
+                2,
+                2,
+                0,
+                2,
+                0
+            ],
+            "away": [
+                1,
+                1,
+                0,
+                1,
+                1
+            ]
+        },
+        "standings": {
+            "title": "Posiciones",
+            "columns": [
+                {
+                    "key": "points",
+                    "display_name": "PTS",
+                    "is_bold": true
+                },
+                {
+                    "key": "games_played",
+                    "display_name": "J"
+                },
+                {
+                    "key": "ratio",
+                    "display_name": "+/-"
+                }
+            ],
+            "rows": [
+                {
+                    "num": 5,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Racing Club",
+                            "short_name": "Racing",
+                            "url_name": "racing-club",
+                            "id": "ihg",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#029CDC",
+                                "text_color": "#000000"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "22"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "14"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "8"
+                        }
+                    ]
+                },
+                {
+                    "num": 10,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Defensa y Justicia",
+                            "short_name": "Defensa",
+                            "url_name": "defensa-y-justicia",
+                            "id": "hcbh",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#22A07D",
+                                "text_color": "#000000"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "18"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "13"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "-2"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

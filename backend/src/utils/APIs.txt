@@ -1,0 +1,147 @@
+pedrofernandez@MacBook-Air-de-Pedro backend % curl -X POST http://localhost:3000/api/predictions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "user_id": 1,
+    "date_id": 14,
+    "predictions": [
+      { "game_id": "edbjhah", "prediction": "L" },
+      { "game_id": "edbjhab", "prediction": "E" }
+    ]
+  }'
+{"message":"Pronósticos guardados correctamente","creditDeducted":false,"remaining_credits":98,"pool_credits":1001}% 
+
+
+## APIs ##
+
+* JACKPOT *
+
+- TRAE EL POZO ACUMULADO
+- GET
+http://localhost:3000/api/jackpot
+RESPUESTA:
+{
+  "total_credits":1000
+}
+
+* USERS *
+
+- TRAE LOS CREDITOS DE UN USUARIO
+- GET
+http://localhost:3000/api/users/1/credits
+RESPUESTA:
+{
+  "user_id": 1,
+  "credits": 97
+}
+
+* DATES *
+
+- TRAE TODAS LAS FECHAS CARGADAS, SU ESTADO Y FECHA DE INICIO/FINALIZACION
+- GET
+http://localhost:3000/api/dates
+RESPUESTA:
+  {
+    "id": 13,
+    "number": 13,
+    "status": "Finalizada",
+    "date_begin": "2025-04-11T19:00:00.000Z",
+    "date_end": "2025-04-15T23:00:00.000Z"
+  },
+  {
+    "id": 14,
+    "number": 14,
+    "status": "En juego",
+    "date_begin": "2025-04-18T17:00:00.000Z",
+    "date_end": "2025-04-22T00:15:00.000Z"
+  },
+  {
+    "id": 15,
+    "number": 15,
+    "status": "Programada",
+    "date_begin": "2025-04-26T15:00:00.000Z",
+    "date_end": "2025-04-29T22:00:00.000Z"
+  }
+
+- TRAE UNA FECHA CARGADA ESPECIFICA, SU ESTADO Y FECHA DE INICIO/FINALIZACION
+- GET
+http://localhost:3000/api/dates/14
+RESPUESTA:
+  {
+    "id": 14,
+    "number": 14,
+    "status": "En juego",
+    "date_begin": "2025-04-18T17:00:00.000Z",
+    "date_end": "2025-04-22T00:15:00.000Z"
+  }
+
+* GAMES *
+
+- TRAE LOS PARTIDOS DE UNA FECHA CARGADA ESPECIFICA
+- GET
+http://localhost:3000/api/games/date/13
+RESPUESTA:
+[
+  {
+    "id": "edbjhbc",
+    "id_date": 13,
+    "result": "L"
+  },
+  {
+    "id": "edbjhbd",
+    "id_date": 13,
+    "result": "E"
+  },
+  {
+    "id": "edbjhbe",
+    "id_date": 13,
+    "result": "V"
+  }
+]
+
+* PREDICTIONS *
+
+- CARGA EL PRONOSTICO DE UN USUARIO EN UNA FECHA ESPECIFICA, DESCUENTA CREDITOS Y LOS SUMA AL JACKPOT
+- POST
+curl -X POST http://localhost:3000/api/predictions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "user_id": 1,
+    "date_id": 14,
+    "predictions": [
+      { "game_id": "edbjhah", "prediction": "L" },
+      { "game_id": "edbjhab", "prediction": "E" }
+    ]
+  }'
+RESPUESTA:
+{
+  "message":"Pronósticos guardados correctamente",
+  "creditDeducted":false,
+  "remaining_credits":98,
+  "pool_credits":1001
+}
+
+- TRAE LOS PRONOSTICOS DE UNA FECHA CARGADA POR UN USUARIO
+- GET
+http://localhost:3000/api/predictions/1/14
+RESPUESTA:
+{
+  "predictions": [
+    {
+      "id": 3,
+      "user_id": 1,
+      "game_id": "edbjgjh",
+      "prediction": "L"
+    },
+    {
+      "id": 4,
+      "user_id": 1,
+      "game_id": "edbjgjg",
+      "prediction": "E"
+    }
+  ]
+}
+
+
+
+
+
