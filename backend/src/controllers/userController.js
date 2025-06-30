@@ -7,8 +7,15 @@ exports.getUserCredits = async (req, res) => {
     const user = await User.findByPk(userId);
     if (!user) return res.status(404).json({ error: 'Usuario no encontrado' });
 
-    return res.json({ user_id: user.id, credits: user.credits });
+    return res.json({
+      user_id: user.id,
+      username: user.username,
+      credits: user.credits
+    });
   } catch (err) {
-    return res.status(500).json({ error: 'Error al obtener créditos del usuario', details: err.message });
+    return res.status(500).json({
+      error: 'Error al obtener créditos del usuario',
+      details: err.message
+    });
   }
 };

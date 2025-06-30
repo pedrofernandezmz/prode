@@ -1,16 +1,3 @@
-pedrofernandez@MacBook-Air-de-Pedro backend % curl -X POST http://localhost:3000/api/predictions \
-  -H "Content-Type: application/json" \
-  -d '{
-    "user_id": 1,
-    "date_id": 14,
-    "predictions": [
-      { "game_id": "edbjhah", "prediction": "L" },
-      { "game_id": "edbjhab", "prediction": "E" }
-    ]
-  }'
-{"message":"Pronósticos guardados correctamente","creditDeducted":false,"remaining_credits":98,"pool_credits":1001}% 
-
-
 ## APIs ##
 
 * JACKPOT *
@@ -65,6 +52,18 @@ RESPUESTA:
 - TRAE UNA FECHA CARGADA ESPECIFICA, SU ESTADO Y FECHA DE INICIO/FINALIZACION
 - GET
 http://localhost:3000/api/dates/14
+RESPUESTA:
+  {
+    "id": 14,
+    "number": 14,
+    "status": "En juego",
+    "date_begin": "2025-04-18T17:00:00.000Z",
+    "date_end": "2025-04-22T00:15:00.000Z"
+  }
+
+- TRAE LA FECHA ACTUAL (STATUS = EN JUEGO) O LA PROXIMA (STATUS = PROGRAMADA[0])
+- GET
+http://localhost:3000/api/dates/current
 RESPUESTA:
   {
     "id": 14,
@@ -141,6 +140,88 @@ RESPUESTA:
   ]
 }
 
+- TRAE LOS PRONOSTICOS DE UNA FECHA CARGADA POR UN USUARIO MAS LOS RESULTADOS DE ESA FECHA
+- GET
+http://localhost:3000/api/predictions/myresults/1/14
+RESPUESTA:
+[
+  {
+    "id": "edbjgjg",
+    "team1": "Lanús",
+    "team2": "Banfield",
+    "img1": "igj",
+    "img2": "ihi",
+    "score": "1 - 0",
+    "result": "E",
+    "predicted": "E"
+  },
+  {
+    "id": "edbjgjh",
+    "team1": "Gimnasia",
+    "team2": "River",
+    "img1": "iia",
+    "img2": "igi",
+    "score": "0 - 3",
+    "result": "V",
+    "predicted": "L"
+  }
+]
+
+- TRAE EL RANKING GENERAL O DE UNA FECHA, CON USUARIOS Y SU CANTIDAD DE ACIERTOS (TOP 30)
+- GET
+http://localhost:3000/api/predictions/ranking/:dateNumber
+Ejemplo para fecha 14:
+http://localhost:3000/api/predictions/ranking/14
+Ejemplo para total:
+http://localhost:3000/api/predictions/ranking/total
+RESPUESTA:
+[
+  {
+    "#": 1,
+    "user_id": 5,
+    "aciertos": 15,
+    "fechas_jugadas": 3,          // Solo para total
+    "User": {
+      "username": "usuario5"
+    }
+  },
+  {
+    "#": 2,
+    "user_id": 3,
+    "aciertos": 13,
+    "fechas_jugadas": 3,          // Solo para total
+    "User": {
+      "username": "usuario3"
+    }
+  }
+]
+
+- TRAE EL RANKING DE UN USUARIO EN PARTICULAR, POR FECHA O TOTAL
+- GET
+http://localhost:3000/api/ranking/user/:userId/:dateNumber
+Ejemplo para usuario 1 y fecha 14:
+http://localhost:3000/api/ranking/user/1/14
+Ejemplo para usuario 1 y total:
+http://localhost:3000/api/ranking/user/1/total
+RESPUESTA:
+{
+  "#": 4,
+  "user_id": 1,
+  "aciertos": 7,    //caso fecha
+  "User": {
+    "username": "testUser"
+  }
+}
+----------
+{
+  "#": 5,
+  "user_id": 1,
+  "aciertos": 42,   //caso total
+  "fechas_jugadas": 6,
+  "User": {
+    "username": "testUser"
+  }
+}
 
 
 

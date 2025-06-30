@@ -7,11 +7,11 @@ const customParseFormat = require('dayjs/plugin/customParseFormat');
 dayjs.extend(customParseFormat);
 
 // 📦 Conexión a MySQL
-const sequelize = new Sequelize('prode_db', 'root', 'Talleres96', {
+const sequelize = new Sequelize('prode_db', 'root', 'password', {
     host: 'localhost',
     dialect: 'mysql',
-    timezone: '-03:00',  // UTC-3 (Argentina)
-  });
+    timezone: '-03:00',
+});
 
 // 🗃️ Modelos
 const Date = sequelize.define('dates', {
@@ -23,11 +23,15 @@ const Date = sequelize.define('dates', {
 }, { timestamps: false });
 
 const Game = sequelize.define('games', {
-  id: { type: DataTypes.STRING, primaryKey: true },
-  id_date: { type: DataTypes.INTEGER, allowNull: false },
-  result: { type: DataTypes.ENUM('L', 'V', 'E'), allowNull: true },
-  teams: { type: DataTypes.STRING, allowNull: true },
-}, { timestamps: false });
+    id: { type: DataTypes.STRING, primaryKey: true },
+    id_date: { type: DataTypes.INTEGER, allowNull: false },
+    team1: { type: DataTypes.STRING, allowNull: true },
+    team2: { type: DataTypes.STRING, allowNull: true },
+    score: { type: DataTypes.STRING, allowNull: true },
+    result: { type: DataTypes.ENUM('L', 'V', 'E'), allowNull: true },
+    img1: { type: DataTypes.STRING, allowNull: true }, // nuevo
+    img2: { type: DataTypes.STRING, allowNull: true }, // nuevo
+  }, { timestamps: false });
 
 Game.belongsTo(Date, { foreignKey: 'id_date' });
 
@@ -53,14 +57,14 @@ async function loadFixtureFromFile(filePath) {
 
   const validGames = games.filter(g => g.start_time);
   const startTimes = validGames
-    .map(g => dayjs(g.start_time, 'DD-MM-YYYY HH:mm')) // sin .tz ni .utc
+    .map(g => dayjs(g.start_time, 'DD-MM-YYYY HH:mm'))
     .sort((a, b) => a.valueOf() - b.valueOf());
 
   if (startTimes.length === 0) {
     throw new Error('No hay fechas válidas en los partidos');
   }
 
-  const dateBegin = startTimes[0].toDate(); // queda exactamente como 'YYYY-MM-DD HH:mm:ss'
+  const dateBegin = startTimes[0].toDate();
   const dateEnd = startTimes[startTimes.length - 1].add(3, 'hour').toDate();
 
   // Upsert de fecha
@@ -78,12 +82,24 @@ async function loadFixtureFromFile(filePath) {
     if (g.winner === 1) result = 'L';
     else if (g.winner === 2) result = 'V';
     else if (g.winner === -1) result = 'E';
-
+  
+    const team1 = g.teams?.[0]?.short_name || null;
+    const team2 = g.teams?.[1]?.short_name || null;
+    const score = (g.scores && g.scores.length === 2)
+      ? `${g.scores[0]} - ${g.scores[1]}`
+      : null;
+    const img1 = g.teams?.[0]?.id || null;
+    const img2 = g.teams?.[1]?.id || null;
+  
     await Game.upsert({
       id: g.id,
       id_date: dateNumber,
+      team1,
+      team2,
+      score,
       result,
-      teams: g.url_name || null,
+      img1,
+      img2,
     });
   }
 
@@ -93,7 +109,9 @@ async function loadFixtureFromFile(filePath) {
 // 👉 Ejecutar
 sequelize.sync().then(async () => {
   try {
-    await loadFixtureFromFile('./data/fecha_13.json'); // Cambiar por la ruta real, poner api
+    for (let i = 1; i <= 16; i++) {
+        await loadFixtureFromFile(`./data/fecha_${i}.json`);
+      }
   } catch (err) {
     console.error('❌ Error:', err.message);
   } finally {
