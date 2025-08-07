@@ -18,6 +18,7 @@ def scrap_tables():
         # Diccionary to save data
         categorized_data = {
             "Apertura": None,
+            "Clausura": None,
             "Promedios 2025": None,
             "Anual": None,
             "players_statistics": data.get("players_statistics", {})
@@ -25,8 +26,11 @@ def scrap_tables():
 
         # Search keywords
         for group in tables_groups:
-            if group.get("name") == "Apertura":
+            group_name = group.get("name", "")
+            if group_name == "Apertura":
                 categorized_data["Apertura"] = group
+            elif group_name == "Clausura":
+                categorized_data["Clausura"] = group
             else:
                 for table in group.get("tables", []):
                     if table.get("name") == "Promedios 2025":

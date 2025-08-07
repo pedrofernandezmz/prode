@@ -66,6 +66,7 @@ if __name__ == '__main__':
     scrap_all()
     # scrap_x_minuto()
     # print(scrap_estado())
+    # scrap fecha actual!!!!
     end_time = time.time()
     total_time = end_time - start_time
     print(f"Time: {total_time} segundos")

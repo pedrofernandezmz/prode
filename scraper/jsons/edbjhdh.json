@@ -1,6 +1,6 @@
 {
     "TTL": 600,
-    "cache_time": 43200,
+    "cache_time": 259200,
     "game": {
         "id": "edbjhdh",
         "league": {
@@ -24,8 +24,8 @@
                 "country_id": "ba",
                 "allow_open": true,
                 "colors": {
-                    "color": "#283B56",
-                    "text_color": "#FFFFFF"
+                    "color": "#EC1E2A",
+                    "text_color": "#000000"
                 },
                 "red_cards": 1,
                 "goals": [
@@ -71,7 +71,7 @@
             "symbol_name": "Fin"
         },
         "start_time": "28-03-2025 19:15",
-        "game_time": 90.0,
+        "game_time": 90,
         "game_time_to_display": "",
         "game_time_status_to_display": "Final",
         "players": {
@@ -90,11 +90,12 @@
                                 "position": "Arquero",
                                 "formation_position": "Arquero",
                                 "country_id": "bai",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 0,
                                     "y": 50
                                 },
-                                "age": 24,
+                                "age": 25,
                                 "height": "1.98"
                             },
                             {
@@ -104,6 +105,7 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 25,
                                     "y": 0
@@ -118,6 +120,7 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 25,
                                     "y": 33
@@ -147,6 +150,7 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Central",
                                 "country_id": "baj",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 25,
                                     "y": 66
@@ -181,6 +185,7 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 25,
                                     "y": 100
@@ -195,6 +200,7 @@
                                 "position": "Mediocampista",
                                 "formation_position": "Mediocampista Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 50,
                                     "y": 20
@@ -224,11 +230,12 @@
                                 "position": "Mediocampista",
                                 "formation_position": "Mediocampista Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 50,
                                     "y": 80
                                 },
-                                "age": 20,
+                                "age": 21,
                                 "height": "1.93",
                                 "events": {
                                     "goals": {
@@ -253,6 +260,7 @@
                                 "position": "Mediocampista",
                                 "formation_position": "Volante Izquierdo",
                                 "country_id": "ba",
+                                "is_captain": true,
                                 "pitch_location": {
                                     "x": 75,
                                     "y": 0
@@ -262,7 +270,7 @@
                                     "player": 16,
                                     "type": 2
                                 },
-                                "age": 27,
+                                "age": 28,
                                 "height": "1.75",
                                 "events": {
                                     "goals": {
@@ -287,6 +295,7 @@
                                 "position": "Delantero",
                                 "formation_position": "Centro Delantero",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 75,
                                     "y": 50
@@ -321,6 +330,7 @@
                                 "position": "Delantero",
                                 "formation_position": "Delantero Derecho",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 75,
                                     "y": 100
@@ -351,10 +361,11 @@
                             {
                                 "jersey_num": 9,
                                 "name": "Andres Vombergar",
-                                "player_short_name": "Andres Vombergar",
+                                "player_short_name": "Vombergar",
                                 "position": "Delantero",
                                 "formation_position": "Centro Delantero",
                                 "country_id": "eg",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 100,
                                     "y": 50
@@ -371,6 +382,7 @@
                                 "position": "Delantero",
                                 "formation_position": "Centro Delantero",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "substitution": {
                                     "time": 57.0,
                                     "player": 28,
@@ -401,6 +413,7 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "substitution": {
                                     "time": 90.0,
                                     "player": 21,
@@ -431,6 +444,7 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "substitution": {
                                     "time": 90.0,
                                     "player": 4,
@@ -461,6 +475,7 @@
                                 "position": "Mediocampista",
                                 "formation_position": "Mediocampista Ofensivo",
                                 "country_id": "c",
+                                "is_captain": false,
                                 "substitution": {
                                     "time": 57.0,
                                     "player": 11,
@@ -491,6 +506,7 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "age": 20,
                                 "height": "1.77"
                             },
@@ -501,7 +517,8 @@
                                 "position": "Arquero",
                                 "formation_position": "Arquero",
                                 "country_id": "ba",
-                                "age": 29,
+                                "is_captain": false,
+                                "age": 30,
                                 "height": "1.88"
                             },
                             {
@@ -511,6 +528,7 @@
                                 "position": "Mediocampista",
                                 "formation_position": "Mediocampista Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "age": 26,
                                 "height": "1.76"
                             },
@@ -521,7 +539,8 @@
                                 "position": "Mediocampista",
                                 "formation_position": "Mediocampista Ofensivo",
                                 "country_id": "ba",
-                                "age": 19
+                                "is_captain": false,
+                                "age": 20
                             },
                             {
                                 "jersey_num": 33,
@@ -530,6 +549,7 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Lateral Izquierdo",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "age": 19,
                                 "height": "1.78"
                             },
@@ -540,7 +560,8 @@
                                 "position": "Delantero",
                                 "formation_position": "Centro Delantero",
                                 "country_id": "ba",
-                                "age": 17
+                                "is_captain": false,
+                                "age": 18
                             },
                             {
                                 "jersey_num": 26,
@@ -549,7 +570,8 @@
                                 "position": "Mediocampista",
                                 "formation_position": "Mediocampista Ofensivo",
                                 "country_id": "ba",
-                                "age": 26,
+                                "is_captain": false,
+                                "age": 27,
                                 "height": "1.65"
                             },
                             {
@@ -559,6 +581,7 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "age": 28,
                                 "height": "1.84"
                             }
@@ -571,6 +594,7 @@
                                 "position": "Dirección",
                                 "formation_position": "Entrenador",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "age": 68
                             }
                         ]
@@ -587,6 +611,7 @@
                                 "position": "Arquero",
                                 "formation_position": "Arquero",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 0,
                                     "y": 50
@@ -601,11 +626,12 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Lateral Izquierdo",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 25,
                                     "y": 0
                                 },
-                                "age": 26,
+                                "age": 27,
                                 "height": "1.75",
                                 "events": {
                                     "goals": {
@@ -630,6 +656,7 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 25,
                                     "y": 33
@@ -659,6 +686,7 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Central",
                                 "country_id": "ba",
+                                "is_captain": true,
                                 "pitch_location": {
                                     "x": 25,
                                     "y": 66
@@ -673,6 +701,7 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Central",
                                 "country_id": "bbb",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 25,
                                     "y": 100
@@ -707,11 +736,12 @@
                                 "position": "Mediocampista",
                                 "formation_position": "Mediocampista Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 50,
                                     "y": 20
                                 },
-                                "age": 27,
+                                "age": 28,
                                 "height": "1.81"
                             },
                             {
@@ -721,6 +751,7 @@
                                 "position": "Mediocampista",
                                 "formation_position": "Volante Derecho",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 50,
                                     "y": 80
@@ -750,6 +781,7 @@
                                 "position": "Mediocampista",
                                 "formation_position": "Volante Izquierdo",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 75,
                                     "y": 0
@@ -759,7 +791,7 @@
                                     "player": 36,
                                     "type": 2
                                 },
-                                "age": 31,
+                                "age": 32,
                                 "height": "1.74",
                                 "events": {
                                     "goals": {
@@ -784,6 +816,7 @@
                                 "position": "Mediocampista",
                                 "formation_position": "Mediocampista Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 75,
                                     "y": 50
@@ -793,7 +826,7 @@
                                     "player": 32,
                                     "type": 2
                                 },
-                                "age": 30,
+                                "age": 31,
                                 "height": "1.68",
                                 "events": {
                                     "goals": {
@@ -818,6 +851,7 @@
                                 "position": "Delantero",
                                 "formation_position": "Delantero Derecho",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 75,
                                     "y": 100
@@ -827,7 +861,7 @@
                                     "player": 25,
                                     "type": 2
                                 },
-                                "age": 34,
+                                "age": 35,
                                 "height": "1.72",
                                 "events": {
                                     "goals": {
@@ -852,6 +886,7 @@
                                 "position": "Delantero",
                                 "formation_position": "Centro Delantero",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "pitch_location": {
                                     "x": 100,
                                     "y": 50
@@ -888,12 +923,13 @@
                                 "position": "Mediocampista",
                                 "formation_position": "Mediocampista Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "substitution": {
                                     "time": 74.0,
                                     "player": 11,
                                     "type": 1
                                 },
-                                "age": 19,
+                                "age": 20,
                                 "height": "1.71",
                                 "events": {
                                     "goals": {
@@ -918,6 +954,7 @@
                                 "position": "Delantero",
                                 "formation_position": "Centro Delantero",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "substitution": {
                                     "time": 75.0,
                                     "player": 9,
@@ -948,6 +985,7 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Central",
                                 "country_id": "bbb",
+                                "is_captain": false,
                                 "substitution": {
                                     "time": 75.0,
                                     "player": 4,
@@ -974,10 +1012,11 @@
                             {
                                 "jersey_num": 32,
                                 "name": "Franco Orozco",
-                                "player_short_name": "Franco Orozco",
+                                "player_short_name": "F. Orozco",
                                 "position": "Delantero",
                                 "formation_position": "Centro Delantero",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "substitution": {
                                     "time": 90.0,
                                     "player": 10,
@@ -1008,12 +1047,13 @@
                                 "position": "Delantero",
                                 "formation_position": "Delantero Derecho",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "substitution": {
                                     "time": 60.0,
                                     "player": 33,
                                     "type": 1
                                 },
-                                "age": 20,
+                                "age": 21,
                                 "height": "1.76",
                                 "events": {
                                     "goals": {
@@ -1038,6 +1078,7 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Lateral Izquierdo",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "age": 21,
                                 "height": "1.73"
                             },
@@ -1048,7 +1089,8 @@
                                 "position": "Delantero",
                                 "formation_position": "Centro Delantero",
                                 "country_id": "ba",
-                                "age": 21,
+                                "is_captain": false,
+                                "age": 22,
                                 "height": "1.75"
                             },
                             {
@@ -1058,6 +1100,7 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "age": 21
                             },
                             {
@@ -1067,7 +1110,8 @@
                                 "position": "Defensor",
                                 "formation_position": "Defensa Central",
                                 "country_id": "bai",
-                                "age": 23,
+                                "is_captain": false,
+                                "age": 24,
                                 "height": "1.92"
                             },
                             {
@@ -1077,6 +1121,7 @@
                                 "position": "Mediocampista",
                                 "formation_position": "Mediocampista Central",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "age": 18
                             },
                             {
@@ -1086,6 +1131,7 @@
                                 "position": "Arquero",
                                 "formation_position": "Arquero",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "age": 25,
                                 "height": "1.87"
                             },
@@ -1096,7 +1142,8 @@
                                 "position": "Mediocampista",
                                 "formation_position": "Mediocampista Ofensivo",
                                 "country_id": "ba",
-                                "age": 20,
+                                "is_captain": false,
+                                "age": 21,
                                 "height": "1.67"
                             }
                         ],
@@ -1108,6 +1155,7 @@
                                 "position": "Dirección",
                                 "formation_position": "Entrenador",
                                 "country_id": "ba",
+                                "is_captain": false,
                                 "age": 53
                             }
                         ]
@@ -1123,6 +1171,7 @@
                         "position": "Defensor",
                         "formation_position": "Defensa Lateral Derecho",
                         "country_id": "ba",
+                        "is_captain": false,
                         "age": 29,
                         "height": "1.75",
                         "missing_details": {
@@ -1139,6 +1188,7 @@
                         "position": "Arquero",
                         "formation_position": "Arquero",
                         "country_id": "ba",
+                        "is_captain": false,
                         "age": 29,
                         "height": "1.85",
                         "missing_details": {
@@ -1157,7 +1207,8 @@
                         "position": "Mediocampista",
                         "formation_position": "Mediocampista Central",
                         "country_id": "ba",
-                        "age": 23,
+                        "is_captain": false,
+                        "age": 24,
                         "height": "1.85",
                         "missing_details": {
                             "type": 1,
@@ -1173,24 +1224,9 @@
                         "position": "Delantero",
                         "formation_position": "Delantero Izquierdo",
                         "country_id": "ba",
+                        "is_captain": false,
                         "age": 37,
                         "height": "1.69",
-                        "missing_details": {
-                            "type": 1,
-                            "reason": "Lesionado",
-                            "will_play_status": 2,
-                            "will_play": "No jugarán"
-                        }
-                    },
-                    {
-                        "jersey_num": 3,
-                        "name": "Nicolás Morgantini",
-                        "player_short_name": "Morgantini",
-                        "position": "Defensor",
-                        "formation_position": "Defensa Central",
-                        "country_id": "ba",
-                        "age": 30,
-                        "height": "1.75",
                         "missing_details": {
                             "type": 1,
                             "reason": "Lesionado",
@@ -1205,8 +1241,26 @@
                         "position": "Defensor",
                         "formation_position": "Defensa Central",
                         "country_id": "ba",
+                        "is_captain": false,
                         "age": 17,
                         "height": "1.74",
+                        "missing_details": {
+                            "type": 1,
+                            "reason": "Lesionado",
+                            "will_play_status": 2,
+                            "will_play": "No jugarán"
+                        }
+                    },
+                    {
+                        "jersey_num": 3,
+                        "name": "Nicolás Morgantini",
+                        "player_short_name": "Morgantini",
+                        "position": "Defensor",
+                        "formation_position": "Defensa Central",
+                        "country_id": "ba",
+                        "is_captain": false,
+                        "age": 30,
+                        "height": "1.75",
                         "missing_details": {
                             "type": 1,
                             "reason": "Lesionado",
@@ -1221,7 +1275,8 @@
                         "position": "Mediocampista",
                         "formation_position": "Volante Derecho",
                         "country_id": "baj",
-                        "age": 30,
+                        "is_captain": false,
+                        "age": 31,
                         "height": "1.80",
                         "missing_details": {
                             "type": 1,
@@ -1234,6 +1289,10 @@
             ]
         },
         "prediction": {
+            "pixels": {
+                "impression": [],
+                "click": []
+            },
             "options": [
                 {
                     "name": "1",
@@ -1708,8 +1767,8 @@
                             "country_id": "ba",
                             "allow_open": true,
                             "colors": {
-                                "color": "#283B56",
-                                "text_color": "#FFFFFF"
+                                "color": "#EC1E2A",
+                                "text_color": "#000000"
                             },
                             "red_cards": 0
                         },
@@ -1782,8 +1841,8 @@
                             "country_id": "ba",
                             "allow_open": true,
                             "colors": {
-                                "color": "#283B56",
-                                "text_color": "#FFFFFF"
+                                "color": "#EC1E2A",
+                                "text_color": "#000000"
                             },
                             "red_cards": 0
                         },
@@ -1856,8 +1915,8 @@
                             "country_id": "ba",
                             "allow_open": true,
                             "colors": {
-                                "color": "#283B56",
-                                "text_color": "#FFFFFF"
+                                "color": "#EC1E2A",
+                                "text_color": "#000000"
                             },
                             "red_cards": 0
                         },
@@ -1943,8 +2002,8 @@
                             "country_id": "ba",
                             "allow_open": true,
                             "colors": {
-                                "color": "#283B56",
-                                "text_color": "#FFFFFF"
+                                "color": "#EC1E2A",
+                                "text_color": "#000000"
                             },
                             "red_cards": 0
                         }
@@ -2017,8 +2076,8 @@
                             "country_id": "ba",
                             "allow_open": true,
                             "colors": {
-                                "color": "#283B56",
-                                "text_color": "#FFFFFF"
+                                "color": "#EC1E2A",
+                                "text_color": "#000000"
                             },
                             "red_cards": 0
                         }
@@ -2060,17 +2119,17 @@
         },
         "recent_form": {
             "home": [
-                1,
-                1,
                 2,
+                2,
+                1,
                 0,
-                2
+                0
             ],
             "away": [
-                2,
                 1,
-                2,
-                2,
+                0,
+                0,
+                0,
                 2
             ]
         },
@@ -2104,28 +2163,28 @@
                             "country_id": "ba",
                             "allow_open": true,
                             "colors": {
-                                "color": "#283B56",
-                                "text_color": "#FFFFFF"
+                                "color": "#EC1E2A",
+                                "text_color": "#000000"
                             }
                         }
                     },
                     "values": [
                         {
                             "key": "points",
-                            "value": "25"
+                            "value": "27"
                         },
                         {
                             "key": "games_played",
-                            "value": "13"
+                            "value": "16"
                         },
                         {
                             "key": "ratio",
-                            "value": "5"
+                            "value": "4"
                         }
                     ]
                 },
                 {
-                    "num": 5,
+                    "num": 7,
                     "entity": {
                         "type": 1,
                         "object": {
@@ -2144,15 +2203,15 @@
                     "values": [
                         {
                             "key": "points",
-                            "value": "19"
+                            "value": "20"
                         },
                         {
                             "key": "games_played",
-                            "value": "14"
+                            "value": "16"
                         },
                         {
                             "key": "ratio",
-                            "value": "3"
+                            "value": "2"
                         }
                     ]
                 }

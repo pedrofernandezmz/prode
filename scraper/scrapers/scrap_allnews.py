@@ -90,7 +90,7 @@ def scrap_news():
 
     # Save news for every team
     for key, data in all_data.items():
-        with open(f'./jsons/news_{key}.json', 'w', encoding='utf-8') as json_file:
+        with open(f'../jsons/news_{key}.json', 'w', encoding='utf-8') as json_file:
             json.dump(data, json_file, ensure_ascii=False, indent=4)
         print(f"Data saved in '{key}.json'")
 

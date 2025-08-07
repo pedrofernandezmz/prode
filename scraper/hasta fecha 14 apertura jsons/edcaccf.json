@@ -1,0 +1,512 @@
+{
+    "TTL": 600,
+    "cache_time": 10800,
+    "game": {
+        "id": "edcaccf",
+        "league": {
+            "name": "Liga Profesional Argentina",
+            "id": "hc",
+            "url_name": "liga-profesional",
+            "country_id": "ba",
+            "show_country_flags": false,
+            "allow_open": true,
+            "country_name": "Argentina",
+            "is_international": false
+        },
+        "stage_round_name": "Apertura, Fecha 16",
+        "winner": -1,
+        "teams": [
+            {
+                "name": "San Martín San Juan",
+                "short_name": "San Martín",
+                "url_name": "san-martin",
+                "id": "hcai",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#179046",
+                    "text_color": "#000000"
+                },
+                "red_cards": 0
+            },
+            {
+                "name": "Aldosivi",
+                "short_name": "Aldosivi",
+                "url_name": "aldosivi",
+                "id": "hccd",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#39B54A",
+                    "text_color": "#000000"
+                },
+                "red_cards": 0
+            }
+        ],
+        "url_name": "san-martin-vs-aldosivi",
+        "status": {
+            "enum": 1,
+            "name": "Prog.",
+            "short_name": "Prog.",
+            "symbol_name": "Prog."
+        },
+        "start_time": "04-05-2025 11:00",
+        "game_time": -1.0,
+        "game_time_to_display": "",
+        "game_time_status_to_display": "Prog.",
+        "prediction": {
+            "options": [
+                {
+                    "name": "1",
+                    "votes": 9,
+                    "percentage": 33,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edcaccf&vote=1"
+                },
+                {
+                    "name": "X",
+                    "votes": 4,
+                    "percentage": 15,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edcaccf&vote=x"
+                },
+                {
+                    "name": "2",
+                    "votes": 14,
+                    "percentage": 52,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edcaccf&vote=2"
+                }
+            ],
+            "total_votes": 27
+        },
+        "game_info": [
+            {
+                "name": "Estadio",
+                "value": "Estadio Ingeniero Hilario Sánchez"
+            },
+            {
+                "name": "Capacidad",
+                "value": "19000"
+            }
+        ],
+        "head_to_head": {
+            "home_wins": 2,
+            "away_wins": 2,
+            "draws": 1,
+            "games": [
+                {
+                    "id": "dicceeg",
+                    "league": {
+                        "name": "Copa Argentina",
+                        "id": "gea",
+                        "url_name": "copa-argentina",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 2,
+                    "to_qualify": 2,
+                    "teams": [
+                        {
+                            "name": "Aldosivi",
+                            "short_name": "Aldosivi",
+                            "url_name": "aldosivi",
+                            "id": "hccd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#39B54A",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "San Martín San Juan",
+                            "short_name": "San Martín",
+                            "url_name": "san-martin",
+                            "id": "hcai",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#179046",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "aldosivi-vs-san-martin",
+                    "scores": [
+                        0.0,
+                        1.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "14-06-2023 13:30",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 3.25,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.0,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 2.38,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "bhfdbhb",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 1,
+                    "teams": [
+                        {
+                            "name": "Aldosivi",
+                            "short_name": "Aldosivi",
+                            "url_name": "aldosivi",
+                            "id": "hccd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#39B54A",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "San Martín San Juan",
+                            "short_name": "San Martín",
+                            "url_name": "san-martin",
+                            "id": "hcai",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#179046",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "aldosivi-vs-san-martin",
+                    "scores": [
+                        1.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "11-02-2019 21:10",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.0,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.2,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 4.0,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "bahdgdd",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 2,
+                    "teams": [
+                        {
+                            "name": "Aldosivi",
+                            "short_name": "Aldosivi",
+                            "url_name": "aldosivi",
+                            "id": "hccd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#39B54A",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "San Martín San Juan",
+                            "short_name": "San Martín",
+                            "url_name": "san-martin",
+                            "id": "hcai",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#179046",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "aldosivi-vs-san-martin",
+                    "scores": [
+                        1.0,
+                        2.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "24-10-2016 21:00",
+                    "game_time_status_to_display": "Final"
+                },
+                {
+                    "id": "jdebbf",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Aldosivi",
+                            "short_name": "Aldosivi",
+                            "url_name": "aldosivi",
+                            "id": "hccd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#39B54A",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "San Martín San Juan",
+                            "short_name": "San Martín",
+                            "url_name": "san-martin",
+                            "id": "hcai",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#179046",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "aldosivi-vs-san-martin",
+                    "scores": [
+                        2.0,
+                        2.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "18-03-2016 19:00",
+                    "game_time_status_to_display": "Final"
+                },
+                {
+                    "id": "ihagig",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 1,
+                    "teams": [
+                        {
+                            "name": "Aldosivi",
+                            "short_name": "Aldosivi",
+                            "url_name": "aldosivi",
+                            "id": "hccd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#39B54A",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "San Martín San Juan",
+                            "short_name": "San Martín",
+                            "url_name": "san-martin",
+                            "id": "hcai",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#179046",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "aldosivi-vs-san-martin",
+                    "scores": [
+                        2.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "29-08-2015 17:10",
+                    "game_time_status_to_display": "Final"
+                }
+            ]
+        },
+        "recent_form": {
+            "home": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "away": [
+                0,
+                2,
+                1,
+                0,
+                1
+            ]
+        },
+        "standings": {
+            "title": "Posiciones",
+            "columns": [
+                {
+                    "key": "points",
+                    "display_name": "PTS",
+                    "is_bold": true
+                },
+                {
+                    "key": "games_played",
+                    "display_name": "J"
+                },
+                {
+                    "key": "ratio",
+                    "display_name": "+/-"
+                }
+            ],
+            "rows": [
+                {
+                    "num": 15,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "San Martín San Juan",
+                            "short_name": "San Martín",
+                            "url_name": "san-martin",
+                            "id": "hcai",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#179046",
+                                "text_color": "#000000"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "6"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "13"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "-10"
+                        }
+                    ]
+                },
+                {
+                    "num": 15,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Aldosivi",
+                            "short_name": "Aldosivi",
+                            "url_name": "aldosivi",
+                            "id": "hccd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#39B54A",
+                                "text_color": "#000000"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "9"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "13"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "-13"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,628 @@
+{
+    "TTL": 600,
+    "cache_time": 15,
+    "game": {
+        "id": "edcacci",
+        "league": {
+            "name": "Liga Profesional Argentina",
+            "id": "hc",
+            "url_name": "liga-profesional",
+            "country_id": "ba",
+            "show_country_flags": false,
+            "allow_open": true,
+            "country_name": "Argentina",
+            "is_international": false
+        },
+        "stage_round_name": "Apertura, Fecha 14",
+        "winner": -1,
+        "teams": [
+            {
+                "name": "San Martín San Juan",
+                "short_name": "San Martín",
+                "url_name": "san-martin",
+                "id": "hcai",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#179046",
+                    "text_color": "#000000"
+                },
+                "red_cards": 0
+            },
+            {
+                "name": "Godoy Cruz",
+                "short_name": "Godoy Cruz",
+                "url_name": "godoy-cruz",
+                "id": "ihd",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#0033CC",
+                    "text_color": "#FFFFFF"
+                },
+                "red_cards": 0
+            }
+        ],
+        "url_name": "san-martin-vs-godoy-cruz",
+        "status": {
+            "enum": 1,
+            "name": "Prog.",
+            "short_name": "Prog.",
+            "symbol_name": "Prog."
+        },
+        "start_time": "20-04-2025 16:30",
+        "game_time": -1.0,
+        "game_time_to_display": "",
+        "game_time_status_to_display": "Prog.",
+        "players": {
+            "missing_players": [
+                [
+                    {
+                        "jersey_num": 27,
+                        "name": "Tomás Fernández",
+                        "player_short_name": "Fernández",
+                        "position": "Delantero",
+                        "formation_position": "Centro Delantero",
+                        "country_id": "ba",
+                        "age": 26,
+                        "height": "1.73",
+                        "missing_details": {
+                            "type": 1,
+                            "reason": "Lesionado",
+                            "will_play_status": 2,
+                            "will_play": "No jugarán"
+                        }
+                    },
+                    {
+                        "jersey_num": 15,
+                        "name": "Juan Cavallaro",
+                        "player_short_name": "Cavallaro",
+                        "position": "Mediocampista",
+                        "formation_position": "Volante Derecho",
+                        "country_id": "ba",
+                        "age": 30,
+                        "height": "1.72",
+                        "missing_details": {
+                            "type": 1,
+                            "reason": "Lesionado",
+                            "will_play_status": 2,
+                            "will_play": "No jugarán"
+                        }
+                    },
+                    {
+                        "jersey_num": 7,
+                        "name": "Maximiliano Casa",
+                        "player_short_name": "Casa",
+                        "position": "Delantero",
+                        "formation_position": "Centro Delantero",
+                        "country_id": "ba",
+                        "age": 32,
+                        "height": "1.81",
+                        "missing_details": {
+                            "type": 1,
+                            "reason": "Lesionado",
+                            "will_play_status": 2,
+                            "will_play": "No jugarán"
+                        }
+                    }
+                ],
+                [
+                    {
+                        "jersey_num": 9,
+                        "name": "Nahuel Ulariaga",
+                        "player_short_name": "Ulariaga",
+                        "position": "Delantero",
+                        "formation_position": "Centro Delantero",
+                        "country_id": "ba",
+                        "age": 23,
+                        "height": "1.70",
+                        "missing_details": {
+                            "type": 1,
+                            "reason": "Lesionado",
+                            "will_play_status": 2,
+                            "will_play": "No jugarán"
+                        }
+                    }
+                ]
+            ]
+        },
+        "prediction": {
+            "options": [
+                {
+                    "name": "1",
+                    "votes": 38,
+                    "percentage": 34,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edcacci&vote=1"
+                },
+                {
+                    "name": "X",
+                    "votes": 19,
+                    "percentage": 17,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edcacci&vote=x"
+                },
+                {
+                    "name": "2",
+                    "votes": 56,
+                    "percentage": 49,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edcacci&vote=2"
+                }
+            ],
+            "total_votes": 133,
+            "odds": [
+                {
+                    "name": "1",
+                    "value": 2.35,
+                    "trend": 1
+                },
+                {
+                    "name": "X",
+                    "value": 2.9,
+                    "trend": 1
+                },
+                {
+                    "name": "2",
+                    "value": 3.6,
+                    "trend": 2
+                }
+            ]
+        },
+        "game_info": [
+            {
+                "name": "Estadio",
+                "value": "Estadio Ingeniero Hilario Sánchez"
+            },
+            {
+                "name": "Capacidad",
+                "value": "19000"
+            },
+            {
+                "name": "Árbitro",
+                "value": "Sebastían Zunino"
+            },
+            {
+                "name": "Arg TV",
+                "value": "ESPN Premium"
+            }
+        ],
+        "head_to_head": {
+            "home_wins": 0,
+            "away_wins": 3,
+            "draws": 2,
+            "games": [
+                {
+                    "id": "eacihbj",
+                    "league": {
+                        "name": "Copa Argentina",
+                        "id": "gea",
+                        "url_name": "copa-argentina",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 1,
+                    "to_qualify": 1,
+                    "teams": [
+                        {
+                            "name": "Godoy Cruz",
+                            "short_name": "Godoy Cruz",
+                            "url_name": "godoy-cruz",
+                            "id": "ihd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#0033CC",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "San Martín San Juan",
+                            "short_name": "San Martín",
+                            "url_name": "san-martin",
+                            "id": "hcai",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#179046",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "godoy-cruz-vs-san-martin",
+                    "scores": [
+                        0.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Por penales",
+                        "short_name": "Por penales",
+                        "symbol_name": "Pen"
+                    },
+                    "start_time": "25-03-2024 17:15",
+                    "game_time_status_to_display": "Por penales",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 1.53,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 4.0,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 7.5,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "bhfdcbe",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "San Martín San Juan",
+                            "short_name": "San Martín",
+                            "url_name": "san-martin",
+                            "id": "hcai",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#179046",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Godoy Cruz",
+                            "short_name": "Godoy Cruz",
+                            "url_name": "godoy-cruz",
+                            "id": "ihd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#0033CC",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "san-martin-vs-godoy-cruz",
+                    "scores": [
+                        0.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "02-03-2019 19:20",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.25,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.0,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 3.5,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "behhbfi",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 1,
+                    "teams": [
+                        {
+                            "name": "Godoy Cruz",
+                            "short_name": "Godoy Cruz",
+                            "url_name": "godoy-cruz",
+                            "id": "ihd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#0033CC",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "San Martín San Juan",
+                            "short_name": "San Martín",
+                            "url_name": "san-martin",
+                            "id": "hcai",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#179046",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "godoy-cruz-vs-san-martin",
+                    "scores": [
+                        2.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "27-04-2018 21:15",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 1.57,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.79,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 6.0,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "bbghgej",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 2,
+                    "teams": [
+                        {
+                            "name": "San Martín San Juan",
+                            "short_name": "San Martín",
+                            "url_name": "san-martin",
+                            "id": "hcai",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#179046",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Godoy Cruz",
+                            "short_name": "Godoy Cruz",
+                            "url_name": "godoy-cruz",
+                            "id": "ihd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#0033CC",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "san-martin-vs-godoy-cruz",
+                    "scores": [
+                        1.0,
+                        2.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "12-05-2017 21:15",
+                    "game_time_status_to_display": "Final"
+                },
+                {
+                    "id": "bbghgbc",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Godoy Cruz",
+                            "short_name": "Godoy Cruz",
+                            "url_name": "godoy-cruz",
+                            "id": "ihd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#0033CC",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "San Martín San Juan",
+                            "short_name": "San Martín",
+                            "url_name": "san-martin",
+                            "id": "hcai",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#179046",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "godoy-cruz-vs-san-martin",
+                    "scores": [
+                        0.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "30-04-2017 16:00",
+                    "game_time_status_to_display": "Final"
+                }
+            ]
+        },
+        "recent_form": {
+            "home": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "away": [
+                2,
+                1,
+                2,
+                1,
+                0
+            ]
+        },
+        "standings": {
+            "title": "Posiciones",
+            "columns": [
+                {
+                    "key": "points",
+                    "display_name": "PTS",
+                    "is_bold": true
+                },
+                {
+                    "key": "games_played",
+                    "display_name": "J"
+                },
+                {
+                    "key": "ratio",
+                    "display_name": "+/-"
+                }
+            ],
+            "rows": [
+                {
+                    "num": 9,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Godoy Cruz",
+                            "short_name": "Godoy Cruz",
+                            "url_name": "godoy-cruz",
+                            "id": "ihd",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#0033CC",
+                                "text_color": "#FFFFFF"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "14"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "13"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "-7"
+                        }
+                    ]
+                },
+                {
+                    "num": 15,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "San Martín San Juan",
+                            "short_name": "San Martín",
+                            "url_name": "san-martin",
+                            "id": "hcai",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#179046",
+                                "text_color": "#000000"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "6"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "13"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "-10"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
