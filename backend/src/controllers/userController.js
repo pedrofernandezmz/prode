@@ -19,3 +19,37 @@ exports.getUserCredits = async (req, res) => {
     });
   }
 };
+
+exports.createUser = async (req, res) => {
+  const { id, username } = req.body;
+
+  if (!id || !username) {
+    return res.status(400).json({ error: 'Se requieren id y username' });
+  }
+
+  try {
+    const [user, created] = await User.findOrCreate({
+      where: { id },
+      defaults: { username }
+    });
+
+    if (!created) {
+      return res.status(409).json({ error: 'El usuario ya existe' });
+    }
+
+    return res.status(201).json({
+      message: 'Usuario creado correctamente',
+      user: {
+        id: user.id,
+        username: user.username,
+        credits: user.credits
+      }
+    });
+  } catch (err) {
+    return res.status(500).json({
+      error: 'Error al crear usuario',
+      details: err.message
+    });
+  }
+};
+

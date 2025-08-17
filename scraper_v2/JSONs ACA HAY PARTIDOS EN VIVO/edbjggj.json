@@ -1,0 +1,549 @@
+{
+    "TTL": 600,
+    "cache_time": 10800,
+    "game": {
+        "id": "edbjggj",
+        "league": {
+            "name": "Liga Profesional Argentina",
+            "id": "hc",
+            "url_name": "liga-profesional",
+            "country_id": "ba",
+            "show_country_flags": false,
+            "allow_open": true,
+            "country_name": "Argentina",
+            "is_international": false
+        },
+        "stage_round_name": "Apertura, Fecha 16",
+        "winner": -1,
+        "teams": [
+            {
+                "name": "Talleres de Córdoba",
+                "short_name": "Talleres",
+                "url_name": "talleres-cordoba",
+                "id": "jche",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#041D47",
+                    "text_color": "#FFFFFF"
+                },
+                "red_cards": 0
+            },
+            {
+                "name": "Instituto",
+                "short_name": "Instituto",
+                "url_name": "instituto-ac-cordoba",
+                "id": "hchc",
+                "country_id": "ba",
+                "allow_open": true,
+                "colors": {
+                    "color": "#EA1D29",
+                    "text_color": "#000000"
+                },
+                "red_cards": 0
+            }
+        ],
+        "url_name": "talleres-cordoba-vs-instituto-ac-cordoba",
+        "status": {
+            "enum": 1,
+            "name": "Prog.",
+            "short_name": "Prog.",
+            "symbol_name": "Prog."
+        },
+        "start_time": "04-05-2025 11:00",
+        "game_time": -1.0,
+        "game_time_to_display": "",
+        "game_time_status_to_display": "Prog.",
+        "prediction": {
+            "options": [
+                {
+                    "name": "1",
+                    "votes": 14,
+                    "percentage": 52,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjggj&vote=1"
+                },
+                {
+                    "name": "X",
+                    "votes": 1,
+                    "percentage": 4,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjggj&vote=x"
+                },
+                {
+                    "name": "2",
+                    "votes": 12,
+                    "percentage": 44,
+                    "vote_url": "https://api.promiedos.com.ar/gamecenter/vote/?gameid=edbjggj&vote=2"
+                }
+            ],
+            "total_votes": 33
+        },
+        "game_info": [
+            {
+                "name": "Estadio",
+                "value": "Estadio Mario Alberto Kempes"
+            },
+            {
+                "name": "Capacidad",
+                "value": "57503"
+            }
+        ],
+        "head_to_head": {
+            "home_wins": 1,
+            "away_wins": 0,
+            "draws": 4,
+            "games": [
+                {
+                    "id": "ebccgch",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Talleres de Córdoba",
+                            "short_name": "Talleres",
+                            "url_name": "talleres-cordoba",
+                            "id": "jche",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#041D47",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Instituto",
+                            "short_name": "Instituto",
+                            "url_name": "instituto-ac-cordoba",
+                            "id": "hchc",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#EA1D29",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "talleres-cordoba-vs-instituto-ac-cordoba",
+                    "scores": [
+                        1.0,
+                        1.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "03-08-2024 17:15",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.15,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.1,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 3.7,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "eadcgjd",
+                    "league": {
+                        "name": "Copa de la Liga Profesional",
+                        "id": "hcbe",
+                        "url_name": "copa-de-la-liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Instituto",
+                            "short_name": "Instituto",
+                            "url_name": "instituto-ac-cordoba",
+                            "id": "hchc",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#EA1D29",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Talleres de Córdoba",
+                            "short_name": "Talleres",
+                            "url_name": "talleres-cordoba",
+                            "id": "jche",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#041D47",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "instituto-ac-cordoba-vs-talleres-cordoba",
+                    "scores": [
+                        2.0,
+                        2.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "12-02-2024 19:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 3.4,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.0,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 2.3,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dihhdgh",
+                    "league": {
+                        "name": "Copa de la Liga Profesional",
+                        "id": "hcbe",
+                        "url_name": "copa-de-la-liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Talleres de Córdoba",
+                            "short_name": "Talleres",
+                            "url_name": "talleres-cordoba",
+                            "id": "jche",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#041D47",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Instituto",
+                            "short_name": "Instituto",
+                            "url_name": "instituto-ac-cordoba",
+                            "id": "hchc",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#EA1D29",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "talleres-cordoba-vs-instituto-ac-cordoba",
+                    "scores": [
+                        0.0,
+                        0.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "16-09-2023 21:00",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 2.1,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.0,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 4.0,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dgicbbe",
+                    "league": {
+                        "name": "Liga Profesional Argentina",
+                        "id": "hc",
+                        "url_name": "liga-profesional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": 2,
+                    "teams": [
+                        {
+                            "name": "Instituto",
+                            "short_name": "Instituto",
+                            "url_name": "instituto-ac-cordoba",
+                            "id": "hchc",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#EA1D29",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Talleres de Córdoba",
+                            "short_name": "Talleres",
+                            "url_name": "talleres-cordoba",
+                            "id": "jche",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#041D47",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "instituto-ac-cordoba-vs-talleres-cordoba",
+                    "scores": [
+                        0.0,
+                        3.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "02-04-2023 16:30",
+                    "game_time_status_to_display": "Final",
+                    "main_odds": {
+                        "options": [
+                            {
+                                "name": "1",
+                                "value": 3.0,
+                                "trend": 0
+                            },
+                            {
+                                "name": "X",
+                                "value": 3.1,
+                                "trend": 0
+                            },
+                            {
+                                "name": "2",
+                                "value": 2.5,
+                                "trend": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "jghfbd",
+                    "league": {
+                        "name": "Primera Nacional",
+                        "id": "ebj",
+                        "url_name": "primera-nacional",
+                        "country_id": "ba",
+                        "show_country_flags": false,
+                        "allow_open": true,
+                        "country_name": "Argentina",
+                        "is_international": false
+                    },
+                    "winner": -1,
+                    "teams": [
+                        {
+                            "name": "Talleres de Córdoba",
+                            "short_name": "Talleres",
+                            "url_name": "talleres-cordoba",
+                            "id": "jche",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#041D47",
+                                "text_color": "#FFFFFF"
+                            },
+                            "red_cards": 0
+                        },
+                        {
+                            "name": "Instituto",
+                            "short_name": "Instituto",
+                            "url_name": "instituto-ac-cordoba",
+                            "id": "hchc",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#EA1D29",
+                                "text_color": "#000000"
+                            },
+                            "red_cards": 0
+                        }
+                    ],
+                    "url_name": "talleres-cordoba-vs-instituto-ac-cordoba",
+                    "scores": [
+                        1.0,
+                        1.0
+                    ],
+                    "status": {
+                        "enum": 3,
+                        "name": "Finalizado",
+                        "short_name": "Final",
+                        "symbol_name": "Fin"
+                    },
+                    "start_time": "15-03-2016 21:05",
+                    "game_time_status_to_display": "Final"
+                }
+            ]
+        },
+        "recent_form": {
+            "home": [
+                0,
+                2,
+                0,
+                1,
+                0
+            ],
+            "away": [
+                1,
+                0,
+                1,
+                1,
+                0
+            ]
+        },
+        "standings": {
+            "title": "Posiciones",
+            "columns": [
+                {
+                    "key": "points",
+                    "display_name": "PTS",
+                    "is_bold": true
+                },
+                {
+                    "key": "games_played",
+                    "display_name": "J"
+                },
+                {
+                    "key": "ratio",
+                    "display_name": "+/-"
+                }
+            ],
+            "rows": [
+                {
+                    "num": 8,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Instituto",
+                            "short_name": "Instituto",
+                            "url_name": "instituto-ac-cordoba",
+                            "id": "hchc",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#EA1D29",
+                                "text_color": "#000000"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "14"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "13"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "-2"
+                        }
+                    ]
+                },
+                {
+                    "num": 10,
+                    "entity": {
+                        "type": 1,
+                        "object": {
+                            "name": "Talleres de Córdoba",
+                            "short_name": "Talleres",
+                            "url_name": "talleres-cordoba",
+                            "id": "jche",
+                            "country_id": "ba",
+                            "allow_open": true,
+                            "colors": {
+                                "color": "#041D47",
+                                "text_color": "#FFFFFF"
+                            }
+                        }
+                    },
+                    "values": [
+                        {
+                            "key": "points",
+                            "value": "13"
+                        },
+                        {
+                            "key": "games_played",
+                            "value": "14"
+                        },
+                        {
+                            "key": "ratio",
+                            "value": "-2"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

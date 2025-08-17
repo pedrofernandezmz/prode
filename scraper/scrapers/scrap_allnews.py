@@ -1,12 +1,15 @@
 import requests
 from bs4 import BeautifulSoup
-import json
 from urllib.parse import urlparse
 import time
+from pymongo import MongoClient
+
+# Conexión a MongoDB
+client = MongoClient("mongodb://localhost:27017/")  # Cambiar si tiene usuario/contraseña
+db = client['prode_mongodb']  # Base de datos
 
 def scrap_news():
 
-    # URLs list to scrap
     urls = [
         "https://www.tycsports.com/argentinos-juniors.html",
         "https://www.tycsports.com/atletico-tucuman.html",
@@ -38,41 +41,31 @@ def scrap_news():
         "https://www.tycsports.com/velez.html"
     ]
 
-    # Diccionary to save url data
     all_data = {}
     general_data = []
 
     for url in urls:
-        # Extract team name
         path = urlparse(url).path
         key = path.split('/')[1].replace('.html', '')
-        
+
         response = requests.get(url)
         soup = BeautifulSoup(response.content, 'html.parser')
-        
-        # Find classes "card col4" y "card col6"
+
         cards = soup.find_all('div', class_=['card', 'col4', 'col6'])
-        
-        # Save Data
         data = []
-        
-        # Extract data from the cards
+
         for card in cards:
-            # Title
             title_tag = card.find('h2', class_='cardTitle')
             title = title_tag.get_text(strip=True) if title_tag else None
-            
-            # URL
+
             link_tag = card.find('a')
             link = "https://www.tycsports.com" + link_tag['href'] if link_tag else None
-            
-            # Image
+
             img_tag = card.find('img')
             image = img_tag.get('data-src') if img_tag else None
 
-            # Video
             video = card.get('data-thumbvideo')
-            
+
             if title and link and (image or video):
                 news_item = {
                     'title': title,
@@ -81,28 +74,23 @@ def scrap_news():
                     'video': video
                 }
                 data.append(news_item)
-        
-        # Save all data
+
         if data:
             all_data[key] = data
-            # Save the first element to make the general news file
             general_data.append(data[0])
 
-    # Save news for every team
-    for key, data in all_data.items():
-        with open(f'../jsons/news_{key}.json', 'w', encoding='utf-8') as json_file:
-            json.dump(data, json_file, ensure_ascii=False, indent=4)
-        print(f"Data saved in '{key}.json'")
+            # Guardar en MongoDB: un solo documento por colección
+            collection = db[f'news_{key}']
+            collection.replace_one({}, {'news': data}, upsert=True)
+            print(f"Data saved/updated in MongoDB collection 'news_{key}'")
 
-    # Save general news
-    with open('./jsons/news.json', 'w', encoding='utf-8') as json_file:
-        json.dump(general_data, json_file, ensure_ascii=False, indent=4)
-
-    print("Data saved in 'news.json'")
+    # Guardar noticias generales
+    general_collection = db['news_general']
+    general_collection.replace_one({}, {'news': general_data}, upsert=True)
+    print("Data saved/updated in MongoDB collection 'news_general'")
 
 if __name__ == "__main__":
     start_time = time.time()
     scrap_news()
     end_time = time.time()
-    total_time = end_time - start_time
-    print("Time:", total_time, "seconds")
+    print("Time:", end_time - start_time, "seconds")

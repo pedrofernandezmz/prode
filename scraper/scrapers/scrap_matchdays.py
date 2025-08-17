@@ -1,31 +1,31 @@
 import requests
-import json
-import os
 import time
+from pymongo import MongoClient
+
+# Conexión a MongoDB
+client = MongoClient("mongodb://localhost:27017/")  # Cambiar si tiene usuario/contraseña
+db = client['prode_mongodb']  # Base de datos
 
 def scrap_matchday(n):
     
-    url = f"https://api.promiedos.com.ar/league/games/hc/72_224_3_{n}"
+    url = f"https://api.promiedos.com.ar/league/games/hc/72_224_8_{n}"
 
-    # Get Data
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
 
-        # Save Data
-        output_file = os.path.join("./jsons", f"fecha_{n}.json")
-        with open(output_file, "w", encoding="utf-8") as f:
-            json.dump(data, f, ensure_ascii=False, indent=4)
-
-        print(f"Data saved in {output_file}")
+        # Guardar en MongoDB: colección "fecha_<n>", un solo documento
+        collection_name = f"fecha_{n}"
+        collection = db[collection_name]
+        collection.replace_one({}, data, upsert=True)  # Siempre un solo documento
+        print(f"Data saved/updated in MongoDB collection '{collection_name}'")
     else:
         print(f"Error: {response.status_code}")
 
 
 if __name__ == "__main__":
     start_time = time.time()
-    n = 9  # Number to scrap matchday
+    n = 9  # Número de la fecha a scrapear
     scrap_matchday(n)
     end_time = time.time()
-    total_time = end_time - start_time
-    print("Time:", total_time, "seconds")
+    print("Time:", end_time - start_time, "seconds")

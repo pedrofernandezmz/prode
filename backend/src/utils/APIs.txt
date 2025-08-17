@@ -21,6 +21,17 @@ RESPUESTA:
   "credits": 97
 }
 
+- CARGA UN USUARIO DESDE FIREBASE CON SU UID
+- POST
+curl -X POST http://localhost:3000/api/users \
+  -H "Content-Type: application/json" \
+  -d '{
+    "id": "k5Mo4NuMEABCDEF4G0VXRZfBaQ2",
+    "username": "usuarioTestid"
+  }'
+RESPUESTA:
+{"message":"Usuario creado correctamente","user":{"id":"k5Mo4NuMEABCDEF4G0VXRZfBaQ2","username":"usuarioTestid","credits":0}}
+
 * DATES *
 
 - TRAE TODAS LAS FECHAS CARGADAS, SU ESTADO Y FECHA DE INICIO/FINALIZACION

@@ -1,72 +1,119 @@
+import schedule
+import time
+from datetime import datetime
+import threading
+
+from scrapers.scrap_currentdate import scrap_currentdate
 from scrapers.scrap_matchdays import scrap_matchday
 from scrapers.scrap_tables import scrap_tables
 from scrapers.scrap_matchs import scrap_match, scrap_allmatchs
-from datetime import datetime
-import json
-import time
-import re
+
+from pymongo import MongoClient
+
+# ---- Global connection (one instance) ----
+client = MongoClient("mongodb://localhost:27017/")
+db = client["prode_mongodb"]
 
 def scrap_all():
+    print("\n### OBTAINING ALL INFO ###\n")
     for n in range(1, 17):
         scrap_matchday(n)
         scrap_allmatchs(n)
     scrap_tables()
 
-def scrap_estado(n):
-    # n = scrap_numero()
-    # scrap_fechas(n)
-    
-    with open(f"./jsons/fecha_{n}.json", "r", encoding="utf-8") as jsonfile:
-        partidos = json.load(jsonfile)
+def get_currentdate():
+    print("\n### OBTAINING CURRENT DATE ###\n")
+    scrap_currentdate()
 
-    tiempos = []  # Lista para almacenar los tiempos
+    current = db.currentDate.find_one({}, {"number": 1, "_id": 0})
 
-    tiempo_pattern = re.compile(r'^\d{1,2}\'$|^E\. T\.$')
+    if current and "number" in current:
+        return current["number"]
+    else:
+        raise ValueError("\n<<ERROR>> Current date number not found\n")
 
-    for partido in partidos:
-        tiempo = partido.get("Tiempo", "").strip()
-        if tiempo_pattern.match(tiempo):
-            tiempos.append(tiempo)
-    # print(tiempos)
-    
-    return tiempos
+def scrap_match_and_tables(match_id):
+    scrap_match(match_id)
+    scrap_tables()
 
-def wait_until_next_check():
-    while True:
-        current_time = datetime.now()
-        current_minute = current_time.minute
-        # Espera hasta el próximo intervalo de 5 minutos
-        if current_minute % 5 == 0:
-        # if current_minute in [43, 41, 57, 46]:
-            return
-        # Espera 15 segundos antes de volver a verificar
-        time.sleep(15)
+def get_status():
+    print("\n### OBTAINING LIVE MATCHES IDs ###\n")
+    global actual_date
+    scrap_matchday(actual_date)
 
-def scrap_x_minuto():
-    print("Comprobando estado...")
-    while True:
+    collection_name = f"fecha_{actual_date}"
+
+    doc = db[collection_name].find_one({}, {"games": 1})
+
+    live_ids = []
+    if doc and "games" in doc:
+        live_ids = [
+            game["id"]
+            for game in doc["games"]
+            if game.get("status", {}).get("enum") == 2
+        ]
+
+    return live_ids
+
+
+# ---------- Global Variables ----------
+actual_date = get_currentdate()
+live_match_ids = set()
+stop_flags = {}
+threads = {}  # Diccionary for controlar threads per match_id
+
+
+# ---------- Task Functions ----------
+def task_get_allmatchs():
+    global actual_date
+    scrap_allmatchs(actual_date)
+
+def task_get_status():
+    global live_match_ids, threads, stop_flags
+    current_live_ids = set(get_status())
+
+    # New live games
+    for match_id in current_live_ids - live_match_ids:
+        stop_flags[match_id] = False
+        thread = threading.Thread(target=match_updater, args=(match_id,), daemon=True)
+        thread.start()
+        threads[match_id] = thread
+
+    # Remove old live games
+    for match_id in live_match_ids - current_live_ids:
+        stop_flags[match_id] = True
+        if match_id in threads:
+            threads.pop(match_id)
+
+    live_match_ids = current_live_ids
+
+def match_updater(match_id):
+    while not stop_flags.get(match_id, True):  # Threads stops if flag is not active
+        scrap_match_and_tables(match_id)
         time.sleep(55)
-        # wait_until_next_check()  # Espera hasta el próximo intervalo de 5 minutos antes de ejecutar la siguiente línea
-        n = scrap_numero() #aca podria hacer que no busque n y directamente acceda a promiedos/primera.com tambien tablas con mismo soup
-        scrap_fechas(n)
-        tiempos = scrap_estado(n)
-        # Verifica si hay algún tiempo en la lista que tenga el formato "nn'" o "E. T."
-        if any(re.match(r'^\d{2}\'$|^E\. T\.$', tiempo) for tiempo in tiempos):
-            # n = scrap_numero()
-            # scrap_fechas(n)
-            scrap_fichas(n)
-            scrap_tablas()
-            # time.sleep(55)
-        else:
-            print("NO HAY PARTIDO EN VIVO. Esperando hasta el próximo intervalo...")
-            wait_until_next_check()  # Espera hasta el próximo intervalo de 5 minutos
 
-if __name__ == '__main__':
-    start_time = time.time()
+
+# ---------- Principal Scheduler ----------
+def main_loop():
+    print("### INITIALIZING SCRAPER ###\n")
+    global actual_date
+    # Ejecutar scrap_total al iniciar
     scrap_all()
-    # scrap_x_minuto()
-    # print(scrap_estado())
-    # scrap fecha actual!!!!
-    end_time = time.time()
-    total_time = end_time - start_time
-    print(f"Time: {total_time} segundos")
+    actual_date = get_currentdate()
+
+    # Programar tareas
+    schedule.every(15).minutes.do(task_get_allmatchs)
+    schedule.every(5).minutes.do(task_get_status)
+
+    while True:
+        now = datetime.now()
+        # This code only executes itself between 13:00 hs & 01:00 hs
+        if now.hour >= 13 or now.hour < 1:
+            schedule.run_pending()
+        else:
+            print("\nNot in workin time (13:00-01:00), trying again in 15 minutes\n")
+            time.sleep(900)
+        time.sleep(1)
+
+if __name__ == "__main__":
+    main_loop()
