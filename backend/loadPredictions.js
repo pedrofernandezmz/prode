@@ -7,13 +7,12 @@ async function main() {
   const connection = await mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'password', // tu contraseña real acá
-    database: 'prode_db' // o el nombre correcto de tu DB
+    password: 'password',
+    database: 'prode_db'
   });
 
-  // Traer todos los partidos hasta fecha 14
   const [games] = await connection.execute(
-    'SELECT id, id_date FROM games WHERE id_date <= 14'
+    'SELECT id, id_date FROM games WHERE id_date <= 5'
   );
 
   // Agrupar por date_id
@@ -37,9 +36,9 @@ async function main() {
           date_id: parseInt(dateId),
           predictions
         });
-        console.log(`✅ Enviado user_id ${userId}, date_id ${dateId}`);
+        console.log(`Sent user_id ${userId}, date_id ${dateId}`);
       } catch (err) {
-        console.error(`❌ Error user_id ${userId}, date_id ${dateId}:`, err.response?.data || err.message);
+        console.error(`<<Error>> user_id ${userId}, date_id ${dateId}:`, err.response?.data || err.message);
       }
     }
   }

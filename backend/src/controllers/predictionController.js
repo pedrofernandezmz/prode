@@ -38,13 +38,13 @@ exports.createOrUpdatePredictions = async (req, res) => {
 
     let creditDeducted = false;
     if (!existingPrediction) {
-      if (user.credits < 1) {
+      if (user.credits < 1000) {
         return res.status(400).json({ error: 'Créditos insuficientes para cargar esta fecha' });
       }
-      user.credits -= 1;
+      user.credits -= 1000;
       await user.save();
 
-      pool.credits += 1;
+      pool.credits += 1000;
       await pool.save();
 
       creditDeducted = true;

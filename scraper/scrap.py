@@ -7,6 +7,7 @@ from scrapers.scrap_currentdate import scrap_currentdate
 from scrapers.scrap_matchdays import scrap_matchday
 from scrapers.scrap_tables import scrap_tables
 from scrapers.scrap_matchs import scrap_match, scrap_allmatchs
+from scrapers.scrap_allnews import scrap_news
 
 from pymongo import MongoClient
 
@@ -34,7 +35,12 @@ def get_currentdate():
 
 def scrap_match_and_tables(match_id):
     scrap_match(match_id)
-    scrap_tables()
+    # Solo un hilo actualiza tablas usando lock
+    if table_lock.acquire(blocking=False):
+        try:
+            scrap_tables()
+        finally:
+            table_lock.release()
 
 def get_status():
     print("\n### OBTAINING LIVE MATCHES IDs ###\n")
@@ -55,12 +61,20 @@ def get_status():
 
     return live_ids
 
+def update_news():
+    print("\n### OBTAINING ALL NEWS ###\n")
+    scrap_news()
 
 # ---------- Global Variables ----------
-actual_date = get_currentdate()
+def update_currentdate():
+    global actual_date
+    actual_date = get_currentdate()
+
+# actual_date = get_currentdate()
 live_match_ids = set()
 stop_flags = {}
 threads = {}  # Diccionary for controlar threads per match_id
+table_lock = threading.Lock()  # ⬅️ Lock para que solo un hilo actualice tablas
 
 
 # ---------- Task Functions ----------
@@ -95,7 +109,7 @@ def match_updater(match_id):
 
 # ---------- Principal Scheduler ----------
 def main_loop():
-    print("### INITIALIZING SCRAPER ###\n")
+    print("\n### INITIALIZING SCRAPER ###\n")
     global actual_date
     # Ejecutar scrap_total al iniciar
     scrap_all()
@@ -104,6 +118,8 @@ def main_loop():
     # Programar tareas
     schedule.every(15).minutes.do(task_get_allmatchs)
     schedule.every(5).minutes.do(task_get_status)
+    schedule.every(30).minutes.do(update_currentdate)
+    # schedule.every(60).minutes.do(update_news)
 
     while True:
         now = datetime.now()
