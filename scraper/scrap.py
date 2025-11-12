@@ -39,6 +39,7 @@ def scrap_match_and_tables(match_id):
     if table_lock.acquire(blocking=False):
         try:
             scrap_tables()
+            scrap_matchday(actual_date)
         finally:
             table_lock.release()
 

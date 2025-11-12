@@ -5,7 +5,7 @@ const { MongoClient } = require('mongodb');
 
 dayjs.extend(customParseFormat);
 
-// Connection to MySQL
+// --- Conexión MySQL ---
 const sequelize = new Sequelize('prode_db', 'root', 'password', {
   host: 'localhost',
   dialect: 'mysql',
@@ -13,16 +13,19 @@ const sequelize = new Sequelize('prode_db', 'root', 'password', {
   logging: false,
 });
 
-// MySQL Models
-const Date = sequelize.define('dates', {
+const Date = sequelize.define('Date', {
   id: { type: DataTypes.INTEGER, primaryKey: true },
   number: { type: DataTypes.INTEGER, unique: true },
   status: { type: DataTypes.ENUM('Programada', 'En juego', 'Finalizada'), allowNull: false },
   date_begin: { type: DataTypes.DATE, allowNull: false },
   date_end: { type: DataTypes.DATE, allowNull: false },
-}, { timestamps: false });
+}, {
+  timestamps: false,
+  tableName: 'dates',
+  freezeTableName: true,
+});
 
-const Game = sequelize.define('games', {
+const Game = sequelize.define('Game', {
   id: { type: DataTypes.STRING, primaryKey: true },
   id_date: { type: DataTypes.INTEGER, allowNull: false },
   team1: { type: DataTypes.STRING, allowNull: true },
@@ -31,11 +34,15 @@ const Game = sequelize.define('games', {
   result: { type: DataTypes.ENUM('L', 'V', 'E'), allowNull: true },
   img1: { type: DataTypes.STRING, allowNull: true },
   img2: { type: DataTypes.STRING, allowNull: true },
-}, { timestamps: false });
+}, {
+  timestamps: false,
+  tableName: 'games',
+  freezeTableName: true,
+});
 
 Game.belongsTo(Date, { foreignKey: 'id_date' });
 
-// Connection to MongoDB
+// --- Conexión MongoDB ---
 const mongoUrl = 'mongodb://localhost:27017';
 const mongoDbName = 'prode_mongodb';
 
@@ -81,7 +88,6 @@ async function loadAllFixturesFromMongo() {
     const dateBegin = startTimes[0].toDate();
     const dateEnd = startTimes[startTimes.length - 1].add(3, 'hour').toDate();
 
-    // Date upsert
     await Date.upsert({
       id: actualDateNumber,
       number: actualDateNumber,
@@ -90,7 +96,6 @@ async function loadAllFixturesFromMongo() {
       date_end: dateEnd,
     });
 
-    // Match upsert
     for (const g of games) {
       let result = null;
       if (g.winner === 1) result = 'L';
@@ -123,13 +128,16 @@ async function loadAllFixturesFromMongo() {
   await client.close();
 }
 
-// MAIN
-sequelize.sync().then(async () => {
+// --- Función principal ---
+async function runJob() {
+  await sequelize.sync();
   try {
     await loadAllFixturesFromMongo();
   } catch (err) {
-    console.error('<<Error>> ', err.message);
-  } finally {
-    await sequelize.close();
+    console.error('<<Error>>', err.message);
   }
-});
+}
+
+// --- Ejecutar inmediatamente y luego cada hora ---
+runJob(); // primer ejecución inmediata
+setInterval(runJob, 60 * 60 * 1000); // cada hora

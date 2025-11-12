@@ -12,7 +12,7 @@ async function main() {
   });
 
   const [games] = await connection.execute(
-    'SELECT id, id_date FROM games WHERE id_date <= 5'
+    'SELECT id, id_date FROM games WHERE id_date <= 15'
   );
 
   // Agrupar por date_id
